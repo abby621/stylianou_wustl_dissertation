@@ -1,8 +1,2578 @@
-@Book{Turabian,
-  author = 	 "Turabian, Kate L.",
-  title = 	 "A Manual for Writers of Term Papers, Theses, and Dissertations",
-  publisher = 	 "University of Chicago Press",
-  year = 	 1987,
-  address =	 "Chicago",
-  edition =	 "5th"
+@STRING{CVPR = {IEEE Conference on Computer Vision and Pattern Recognition}}
+@STRING{ECCV = {European Conference on Computer Vision}}
+@STRING{ICCV = {IEEE International Conference on Computer Vision}}
+@STRING{ICDSC = {International Conference on Distributed Smart Cameras}} 
+@STRING{ICPR= {International Conference on Pattern Recognition}}
+@STRING{SIGGRAPH = {ACM Transactions on Graphics (SIGGRAPH)}}
+@STRING{NIPS = {Advances in Neural Information Processing Systems}}
+
+
+@inproceedings{CAR196,
+    title = {3{D} Object Representations for Fine-Grained Categorization},
+    booktitle = {4th International IEEE Workshop on  3D Representation and Recognition (3dRR-13)},
+    year = {2013},
+    address = {Sydney, Australia},
+    author = {Jonathan Krause and Michael Stark and Jia Deng and Li Fei-Fei}
 }
+
+@inproceedings{ustinova2016learning,
+  title={Learning deep embeddings with histogram loss},
+  author={Ustinova, Evgeniya and Lempitsky, Victor},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={4170--4178},
+  year={2016}
+}
+
+@inproceedings{schroff2015facenet,
+  title={Facenet: A unified embedding for face recognition and clustering},
+  author={Schroff, Florian and Kalenichenko, Dmitry and Philbin, James},
+  booktitle=CVPR,
+  pages={815--823},
+  year={2015}
+}
+
+@InProceedings{proxy,
+  author = {Movshovitz-Attias, Yair and Toshev, Alexander and Leung, Thomas K. and Ioffe, Sergey and Singh, Saurabh},
+  title = {No Fuss Distance Metric Learning Using Proxies},
+  booktitle = ICCV,
+  month = {Oct},
+  year = {2017}
+}
+
+@article{vo2018generalization,
+  title={Generalization in Metric Learning: Should the Embedding Layer be the Embedding Layer?},
+  author={Vo, Nam and Hays, James},
+  journal={arXiv preprint arXiv:1803.03310},
+  year={2018}
+}
+
+@inproceedings{wang2014learning,
+  title={Learning fine-grained image similarity with deep ranking},
+  author={Wang, Jiang and Song, Yang and Leung, Thomas and Rosenberg, Chuck and Wang, Jingbin and Philbin, James and Chen, Bo and Wu, Ying},
+  booktitle=CVPR,
+  pages={1386--1393},
+  year={2014}
+}
+
+@article{bell2015learning,
+  title={Learning visual similarity for product design with convolutional neural networks},
+  author={Bell, Sean and Bala, Kavita},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={34},
+  number={4},
+  pages={98},
+  year={2015},
+  publisher={ACM}
+}
+
+@inproceedings{sun2014deep,
+  title={Deep learning face representation by joint identification-verification},
+  author={Sun, Yi and Chen, Yuheng and Wang, Xiaogang and Tang, Xiaoou},
+  booktitle={Advances in neural information processing systems},
+  pages={1988--1996},
+  year={2014}
+}
+
+@inproceedings{yi2014deep,
+  title={Deep metric learning for person re-identification},
+  author={Yi, Dong and Lei, Zhen and Liao, Shengcai and Li, Stan Z},
+  booktitle=ICPR,
+  pages={34--39},
+  year={2014},
+  organization={IEEE}
+}
+
+@article{kunze2009sex,
+  title={Sex trafficking via the Internet: How international agreements address the problem and fail to go far enough},
+  author={Kunze, Erin I},
+  journal={J. High Tech. L.},
+  volume={10},
+  pages={241},
+  year={2009},
+  publisher={HeinOnline}
+}
+
+@article{lecun2015deep,
+  title={Deep learning},
+  author={LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  journal={Nature},
+  volume={521},
+  number={7553},
+  pages={436},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+@article{castelvecchi2016can,
+  title={Can we open the black box of AI?},
+  author={Castelvecchi, Davide},
+  journal={Nature News},
+  volume={538},
+  number={7623},
+  pages={20},
+  year={2016}
+}
+@InProceedings{krizhevsky2012imagenet,
+  Title                    = {Imagenet classification with deep convolutional neural
+ networks},
+  Author                   = {Krizhevsky, Alex and Sutskever, Ilya and Hinton,
+ Geoffrey E},
+  Booktitle                = NIPS,
+  Year                     = {2012}
+}
+
+@InProceedings{deng2009imagenet,
+  Title                    = {Imagenet: A large-scale hierarchical image database},
+  Author                   = {Deng, Jia and Dong, Wei and Socher, Richard and Li,
+ Li-Jia and Li, Kai and Fei-Fei, Li},
+  Booktitle                = CVPR,
+  Year                     = {2009}
+}
+
+@Article{jia2014caffe,
+  Title                    = {Caffe: Convolutional Architecture for Fast Feature Embedding},
+  Author                   = {Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and
+ Karayev, Sergey and Long, Jonathan and Girshick, Ross and
+ Guadarrama, Sergio and Darrell, Trevor},
+  Journal                  = {arXiv preprint arXiv:1408.5093},
+  Year                     = {2014}
+}
+
+@article{zhou2017places,
+author={B. Zhou and A. Lapedriza and A. Khosla and A. Oliva and A. Torralba}, 
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+title={Places: A 10 Million Image Database for Scene Recognition}, 
+year={2018}, 
+volume={40}, 
+number={6}, 
+pages={1452-1464}
+}
+
+@article{ILSVRC15,
+Author = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
+Title = {{ImageNet Large Scale Visual Recognition Challenge}},
+Year = {2015},
+journal   = {International Journal of Computer Vision (IJCV)},
+doi = {10.1007/s11263-015-0816-y},
+volume={115},
+number={3},
+pages={211-252}
+}
+
+@article{resnet,
+  author    = {Kaiming He and
+               Xiangyu Zhang and
+               Shaoqing Ren and
+               Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  journal   = {CoRR},
+  volume    = {abs/1512.03385},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.03385},
+  archivePrefix = {arXiv},
+  eprint    = {1512.03385},
+  timestamp = {Wed, 07 Jun 2017 14:41:17 +0200},
+  biburl    = {http://dblp.org/rec/bib/journals/corr/HeZRS15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inproceedings{lowe1999object,
+  title={Object recognition from local scale-invariant features},
+  author={Lowe, David G},
+  booktitle={Computer vision, 1999. The proceedings of the seventh IEEE International Conference on},
+  volume={2},
+  pages={1150--1157},
+  year={1999},
+  organization={Ieee}
+}
+
+@article{aipr2015,
+author = {Abby Stylianou, and Abigail Norling-Ruggles, and Richard Souvenir, and Robert Pless, and undefined, and undefined, and undefined, and undefined, },
+title = {Indexing open imagery to create tools to fight sex trafficking},
+journal = {2015 IEEE Applied Imagery Pattern Recognition Workshop (AIPR)},
+volume = {00},
+number = {},
+issn = {2332-5615},
+year = {2015},
+pages = {1-6},
+doi = {doi.ieeecomputersociety.org/10.1109/AIPR.2015.7444535},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+}
+
+@article{Lowe:2004:DIF:993451.996342,
+ author = {Lowe, David G.},
+ title = {Distinctive Image Features from Scale-Invariant Keypoints},
+ journal = {Int. J. Comput. Vision},
+ issue_date = {November 2004},
+ volume = {60},
+ number = {2},
+ month = nov,
+ year = {2004},
+ issn = {0920-5691},
+ pages = {91--110},
+ numpages = {20},
+ url = {http://dx.doi.org/10.1023/B:VISI.0000029664.99615.94},
+ doi = {10.1023/B:VISI.0000029664.99615.94},
+ acmid = {996342},
+ publisher = {Kluwer Academic Publishers},
+ address = {Hingham, MA, USA},
+ keywords = {image matching, invariant features, object recognition, scale invariance},
+} 
+
+@inproceedings{Silva:2014:DIO:2612733.2612746,
+ author = {Silva, Daniel Ribeiro and Philpot, Andrew and Sundararajan, Abhishek and Bryan, Nicole Marie and Hovy, Eduard},
+ title = {Data Integration from Open Internet Sources and Network Detection to Combat Underage Sex Trafficking},
+ booktitle = {Proceedings of the 15th Annual International Conference on Digital Government Research},
+ series = {dg.o '14},
+ year = {2014},
+ isbn = {978-1-4503-2901-9},
+ location = {Aguascalientes, Mexico},
+ pages = {86--90},
+ numpages = {5},
+ url = {http://doi.acm.org/10.1145/2612733.2612746},
+ doi = {10.1145/2612733.2612746},
+ acmid = {2612746},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {child trafficking, information integration, law enforcement, natural language processing, prostitution networks, sex trafficking},
+} 
+
+@inproceedings{song2016deep,
+  title={Deep metric learning via lifted structured feature embedding},
+  author={Song, Hyun Oh and Xiang, Yu and Jegelka, Stefanie and Savarese, Silvio},
+  booktitle=CVPR,
+  pages={4004--4012},
+  year={2016},
+  organization={IEEE}
+}
+
+@inproceedings{wang2012data,
+  title={Data integration from open internet sources to combat sex trafficking of minors},
+  author={Wang, Hao and Cai, Congxing and Philpot, Andrew and Latonero, Mark and Hovy, Eduard H and Metzler, Donald},
+  booktitle={Proceedings of the 13th Annual International Conference on Digital Government Research},
+  pages={246--252},
+  year={2012},
+  organization={ACM}
+}
+
+@incollection{fedorschak2014data,
+  title={Data Analytics and Human Trafficking},
+  author={Fedorschak, Kena and Kandala, Srivatsav and Desouza, Kevin C and Krishnamurthy, Rashmi},
+  booktitle={Advancing the Impact of Design Science: Moving from Theory to Practice},
+  pages={69--84},
+  year={2014},
+  publisher={Springer}
+}
+
+@inproceedings{fedina2015systematic,
+  title={A Systematic Review and Methodological Critique of Human Trafficking Prevalence Studies},
+  author={Fedina, Lisa},
+  booktitle={Society for Social Work and Research 19th Annual Conference: The Social and Behavioral Importance of Increased Longevity},
+  year={2015},
+  organization={Sswr}
+}
+
+@inproceedings{blair2014takes,
+  title={It Takes a Movement to Defeat a Market: Tech-Enabled Collaboration to Combat Human Trafficking},
+  author={Blair, Dave},
+  booktitle={APSA 2014 Annual Meeting Paper},
+  year={2014}
+}
+
+% from the memex program
+@inproceedings{knoblock2015scalable,
+  title={A scalable architecture for extracting, aligning, linking, and visualizing multi-Int data},
+  author={Knoblock, Craig A and Szekely, Pedro},
+  booktitle={SPIE Sensing Technology+ Applications},
+  pages={949907--949907},
+  year={2015},
+  organization={International Society for Optics and Photonics}
+}
+@inproceedings{moise2013indexing,
+  title={Indexing and searching 100M images with Map-Reduce},
+  author={Moise, Diana and Shestakov, Denis and Gudmundsson, Gylfi and Amsaleg, Laurent},
+  booktitle={Proceedings of the 3rd ACM conference on International conference on multimedia retrieval},
+  pages={17--24},
+  year={2013},
+  organization={ACM}
+}
+@inproceedings{Zamir10,
+   Author = {Amir Roshan Zamir and Mubarak Shah},
+   Booktitle = {Proceedings of the European Conference on Computer Vision ({ECCV})},
+   Title = {Accurate Image Localization Based on Google Maps Street View},
+   Year = {2010}}
+   
+@misc{vedaldi08vlfeat,
+ Author = {A. Vedaldi and B. Fulkerson},
+ Title = {{VLFeat}: An Open and Portable Library
+          of Computer Vision Algorithms},
+ Year  = {2008},
+ Howpublished = {\url{http://www.vlfeat.org/}
+ }}
+ 
+@InProceedings{allAboutVlad,
+  author       = "Arandjelovi\'c, R. and Zisserman, A.",
+  title        = "All about {VLAD}",
+  booktitle    = "IEEE Conference on Computer Vision and Pattern Recognition",
+  year         = "2013",
+}
+
+
+@article{vlad,
+ author = {Jegou, Herve and Perronnin, Florent and Douze, Matthijs and Sanchez, Jorge and Perez, Patrick and Schmid, Cordelia},
+ title = {Aggregating Local Image Descriptors into Compact Codes},
+ journal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+ issue_date = {September 2012},
+ volume = {34},
+ number = {9},
+ month = sep,
+ year = {2012},
+ issn = {0162-8828},
+ pages = {1704--1716},
+ numpages = {13},
+ url = {http://dx.doi.org/10.1109/TPAMI.2011.235},
+ doi = {10.1109/TPAMI.2011.235},
+ acmid = {2361217},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {Vectors,Accuracy,Visualization,Kernel,Indexing,Image representation,indexing.,Image search,image retrieval},
+} 
+
+@InProceedings{netvlad,
+  author       = "Arandjelovi\'c, R. and Gronat, P. and Torii, A. and Pajdla, T. and Sivic, J.",
+  title        = "{NetVLAD}: {CNN} architecture for weakly supervised place recognition",
+  booktitle    = CVPR,
+  year         = "2016",
+}
+@inproceedings{bau2017network,
+  title={Network dissection: Quantifying interpretability of deep visual representations},
+  author={Bau, David and Zhou, Bolei and Khosla, Aditya and Oliva, Aude and Torralba, Antonio},
+  booktitle=CVPR,
+  pages={3319--3327},
+  year={2017},
+  organization={IEEE}
+}
+
+@inproceedings{sun,
+  added-at = {2014-07-31T00:00:00.000+0200},
+  author = {Xiao, Jianxiong and Hays, James and Ehinger, Krista A. and Oliva, Aude and Torralba, Antonio},
+  biburl = {http://www.bibsonomy.org/bibtex/232294b312a372e89fbb447d12d904dc7/dblp},
+  booktitle = CVPR,
+  crossref = {conf/cvpr/2010},
+  ee = {http://doi.ieeecomputersociety.org/10.1109/CVPR.2010.5539970},
+  interhash = {496f3934a4f2a511117f43d385da847c},
+  intrahash = {32294b312a372e89fbb447d12d904dc7},
+  isbn = {978-1-4244-6984-0},
+  keywords = {dblp},
+  pages = {3485-3492},
+  publisher = {IEEE Computer Society},
+  timestamp = {2015-06-19T16:09:09.000+0200},
+  title = {SUN database: Large-scale scene recognition from abbey to zoo.},
+  url = {http://dblp.uni-trier.de/db/conf/cvpr/cvpr2010.html#XiaoHEOT10},
+  year = 2010
+}
+
+
+@inproceedings{ caltechDataset,
+       author = "P. Doll\'ar and C. Wojek and B. Schiele and  P. Perona",
+       title = "Pedestrian Detection: A Benchmark",
+       booktitle = "CVPR",
+       month = "June",
+       year = "2009",
+       city = "Miami",
+}
+
+@Misc{scipy,
+  author =    {Eric Jones and Travis Oliphant and Pearu Peterson and others},
+  title =     {{SciPy}: Open source scientific tools for {Python}},
+  year =      {2001--},
+  url = "http://www.scipy.org/"
+}
+
+@article{segnet,
+  title={SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling},
+  author={Badrinarayanan, Vijay and Handa, Ankur, and Cipolla, Roberto},
+  journal={arXiv preprint arXiv:1505.07293},
+  year={2015}
+}
+
+@techreport{thorn,
+     title = {{Sectortion: Findings from a Survey of 1,631 Victims}},
+     author = {Janis Wolak and David Finkelhor},
+     group = {Crimes Against Children Research Center},
+     year = {2016},
+     institution = {University of New Hampshire},
+     month = {06},
+}
+
+@article{faiss,
+  title={Billion-scale similarity search with GPUs},
+  author={Johnson, Jeff and Douze, Matthijs and J{\'e}gou, Herv{\'e}},
+  journal={arXiv preprint arXiv:1702.08734},
+  year={2017}
+}
+
+@article{HermansBeyer2017Arxiv,
+  title       = {{In Defense of the Triplet Loss for Person Re-Identification}},
+  author      = {Hermans, Alexander and Beyer, Lucas and Leibe, Bastian},
+  journal     = {arXiv preprint arXiv:1703.07737},
+  year        = {2017}
+}
+
+@inproceedings{szekely2015building,
+  title={Building and using a knowledge graph to combat human trafficking},
+  author={Szekely, Pedro and Knoblock, Craig A and Slepicka, Jason and Philpot, Andrew and Singh, Amandeep and Yin, Chengye and Kapoor, Dipsy and Natarajan, Prem and Marcu, Daniel and Knight, Kevin and others},
+  booktitle={International Semantic Web Conference},
+  pages={205--221},
+  year={2015}
+}
+
+@article{dubrawski2015leveraging,
+  title={Leveraging publicly available data to discern patterns of human-trafficking activity},
+  author={Dubrawski, Artur and Miller, Kyle and Barnes, Matthew and Boecking, Benedikt and Kennedy, Emily},
+  journal={Journal of Human Trafficking},
+  volume={1},
+  number={1},
+  pages={65--85},
+  year={2015},
+  publisher={Taylor \& Francis}
+}
+
+@article{tong2017combating,
+  title={Combating Human Trafficking with Deep Multimodal Models},
+  author={Tong, Edmund and Zadeh, Amir and Jones, Cara and Morency, Louis-Philippe},
+  journal={arXiv preprint arXiv:1705.02735},
+  year={2017}
+}
+@inproceedings{kejriwal2017investigative,
+  title={An Investigative Search Engine for the Human Trafficking Domain},
+  author={Kejriwal, Mayank and Szekely, Pedro},
+  booktitle={International Semantic Web Conference},
+  pages={247--262},
+  year={2017},
+  organization={Springer}
+}
+@article{alvari2017semi,
+  title={Semi-supervised learning for detecting human trafficking},
+  author={Alvari, Hamidreza and Shakarian, Paulo and Snyder, JE Kelly},
+  journal={Security Informatics},
+  volume={6},
+  number={1},
+  pages={1},
+  year={2017},
+  publisher={Springer}
+}
+
+
+@article{Pronobis2010,
+ author = {Pronobis, A. and Caputo, B. and Jensfelt, P. and Christensen, H. I.},
+ title = {A Realistic Benchmark for Visual Indoor Place Recognition},
+ journal = {Robot. Auton. Syst.},
+ issue_date = {January, 2010},
+ volume = {58},
+ number = {1},
+ month = jan,
+ year = {2010},
+ issn = {0921-8890},
+ pages = {81--96},
+ numpages = {16},
+ url = {http://dx.doi.org/10.1016/j.robot.2009.07.025},
+ doi = {10.1016/j.robot.2009.07.025},
+ acmid = {1664026},
+ publisher = {North-Holland Publishing Co.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+ keywords = {Robot topological localization, Standard robotic benchmark, Visual place recognition},
+} 
+
+@InProceedings{vggfaces,
+  author       = "Parkhi, O. M. and Vedaldi, A. and Zisserman, A.",
+  title        = "Deep Face Recognition",
+  booktitle    = "British Machine Vision Conference",
+  year         = "2015",
+}
+
+@inproceedings{googleLandmarks,
+  added-at = {2009-07-06T12:31:53.000+0200},
+  address = {Miami, Florida, U.S.A},
+  author = {Zheng, Yan-Tao and Zhao, Ming and Song, Yang and Adam, Hartwig and Buddemeier, Ulrich and Bissacco, Alessandro and Brucher, Fernando and Chua, Tat-Seng and Neven, Hartmut},
+  biburl = {https://www.bibsonomy.org/bibtex/2774993d5fd2cc1e9aec1c2293391843e/casi},
+  booktitle = CVPR,
+  doi = {http://doi.acm.org/10.1145/1291233.1291448},
+  interhash = {7c689ee4793f8e8720a5d174d621218c},
+  intrahash = {774993d5fd2cc1e9aec1c2293391843e},
+  keywords = {automatic landmark phd recognition related thesis-motivation thesis-semantic-multimedia},
+  location = {Miami, Florida, U.S.A},
+  timestamp = {2009-07-13T10:22:37.000+0200},
+  title = {Tour the World: building a web-scale landmark recognition engine},
+  year = {June, 2009}
+}
+
+@InProceedings{vggface2,
+  author       = "Cao, Q. and Shen, L. and Xie, W. and Parkhi, O. M. and Zisserman, A.",
+  title        = "{VGGFace2}: A dataset for recognising faces across pose and age",
+  booktitle    = "International Conference on Automatic Face and Gesture Recognition",
+  year         = "2018",
+}
+
+@misc{Keras_VGG,
+  author = {rcmalli},
+  title = {{VGGFace} implementation with Keras Framework},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/rcmalli/keras-vggface}}
+}
+
+@misc{places_vgg,
+  author = {GKalliatakis},
+  title = {Keras | VGG16 Places365 - VGG16 CNN models pre-trained on Places365-Standard for scene classification},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/GKalliatakis/Keras-VGG16-places365}}
+}
+
+@misc{chollet2015,
+author = {François Chollet },
+title = {Keras},
+year = {2015},
+publisher = {GitHub},
+journal = {GitHub repository},
+howpublished = {\url{https://github.com/fchollet/keras}},
+commit = {5bcac37}
+}
+
+@inproceedings{scenecnn_iclr15,
+Author = {Bolei Zhou and Aditya Khosla and Agata Lapedriza and Aude Oliva and Antonio Torralba},
+Title = {Object Detectors Emerge in Deep Scene CNNs},
+Year = {2015},
+Booktitle = {International Conference on Learning Representations (ICLR)}
+}
+
+@STRING{CVPR = {IEEE Conference on Computer Vision and Pattern Recognition}}
+@STRING{PAMI = {IEEE Transactions on Pattern Analysis and Machine Intelligence}}
+@STRING{ECCV = {European Conference on Computer Vision}}
+@STRING{ICCV = {IEEE International Conference on Computer Vision}}
+@STRING{ICDSC = {International Conference on Distributed Smart Cameras}} 
+@STRING{ICPR= {International Conference on Pattern Recognition}}
+@STRING{SIGGRAPH = {ACM Transactions on Graphics (SIGGRAPH)}}
+@STRING{NIPS = {Advances in Neural Information Processing Systems}}
+@STRING{WACV = {IEEE Winter Conference on Applications of Computer Vision (WACV)}}
+
+@article{cnn,
+title={Your hotel room photos could help catch sex traffickers},
+author={Katy Scott},
+year={March 20, 2017},
+journal = {CNN}
+}
+
+@article{techcrunch,
+title={You can help stop human trafficking with the TraffickCam app},
+author={Haje Jan Kamps},
+year={Jun 25, 2016},
+journal={Tech Crunch}
+}
+
+@article{washingtonpost,
+title={An incredibly simple way your phone may help save sex trafficked children},
+author={Colby Itkowitz},
+year = {July 1, 2016},
+journal = {Washington Post}}
+
+@inproceedings{stylianou2013finding,
+  title={Finding jane doe: A forensic application of 2d image calibration},
+  author={Stylianou, Abby and Abrams, Austin and Pless, Robert},
+  year={2013},
+  Booktitle                = {International Conference on Crime Detection and Prevention},
+}
+
+@Article{dixonTransparency2011,
+  author =       {Michael Dixon and Robert Glaubius and Philip Freeman and Robert Pless and Michael P. Gleason and Matthew M. Thomas and William D. Smart},
+  title =        {Measuring optical distortion in aircraft transparencies: a fully automated system for quantitative evaluation},
+  journal =      {Machine Vision and Applications},
+  pages =       {1-14},
+volume = 22,
+number = 5,
+  year =         {2011},
+  annote = "applications",
+url="http://www.cs.wustl.edu/~msd2/publications/mvap2010.pdf"
+}
+
+
+
+@misc{freeman2011evaluation,
+  title={Evaluation of optical distortion in a transparency},
+  author={Freeman, Philip L and Gleason, Michael P and Thomas, Matthew M and Dixon, Michael S and Pless, Robert B and Smart, William D},
+  year={2011},
+  month=mar # "~1",
+  publisher={Google Patents},
+  note={US Patent 7,899,236}
+}
+
+@article{postDispatch,
+  title={Slain girl\'s remains found as part of 30-year-old St. Louis murder investigation},
+  author={Christine Byers},
+  journal={St. Louis Post Dispatch},
+  year={Jun 18, 2013}
+}
+
+@article{stltodayHotels,
+  title={How cellphone photos of a hotel room might combat sex trafficking},
+  author={Nancy Cambria},
+  journal={St. Louis Post Dispatch},
+  year={Mar 11, 2014}
+}
+
+
+@article{kunze2009sex,
+  title={Sex trafficking via the Internet: How international agreements address the problem and fail to go far enough},
+  author={Kunze, Erin I},
+  journal={J. High Tech. L.},
+  volume={10},
+  pages={241},
+  year={2009},
+  publisher={HeinOnline}
+}
+
+@article{cam,
+  author    = {Bolei Zhou and
+               Aditya Khosla and
+               {\`{A}}gata Lapedriza and
+               Aude Oliva and
+               Antonio Torralba},
+  title     = {Learning Deep Features for Discriminative Localization},
+  journal   = {CoRR},
+  volume    = {abs/1512.04150},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.04150},
+  archivePrefix = {arXiv},
+  eprint    = {1512.04150},
+  timestamp = {Wed, 12 Jul 2017 09:11:26 +0200},
+  biburl    = {http://dblp.org/rec/bib/journals/corr/ZhouKLOT15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{jia2014caffe,
+  Title                    = {Caffe: Convolutional Architecture for Fast Feature Embedding},
+  Author                   = {Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and
+ Karayev, Sergey and Long, Jonathan and Girshick, Ross and
+ Guadarrama, Sergio and Darrell, Trevor},
+  Journal                  = {arXiv preprint arXiv:1408.5093},
+  Year                     = {2014}
+}
+
+@InProceedings{zhou2014places,
+  Title                    = {{Learning Deep Features for Scene Recognition using Places
+ Database.}},
+  Author                   = {Zhou, B. and Lapedriza, A. and Xiao, J. and Torralba, A.
+ and Oliva, A.},
+  Booktitle                = NIPS,
+  Year                     = {2014}
+}
+
+@inproceedings{ngan2015tattoo,
+  title={Tattoo recognition technology-challenge ({Tatt-C}): {A}n open tattoo database for developing tattoo recognition research},
+  author={Ngan, Mei and Grother, Patrick},
+  booktitle={IEEE International Conference on Identity, Security and Behavior Analysis (ISBA)},
+  pages={1--6},
+  year={2015}
+  }
+
+@techreport{wah2011caltech,
+  title={The caltech-ucsd birds-200-2011 dataset},
+  author={Wah, Catherine and Branson, Steve and Welinder, Peter and Perona, Pietro and Belongie, Serge},
+  year={2011},
+  institution={California Institute of Technology}
+}
+
+@techreport{krizhevsky2009learning,
+  title={Learning multiple layers of features from tiny images},
+  author={Krizhevsky, Alex and Hinton, Geoffrey},
+  year={2009},
+  institution={University of Toronto}
+}
+
+proceedings{lowe1999object,
+  title={Object recognition from local scale-invariant features},
+  author={Lowe, David G},
+  booktitle={Computer vision, 1999. The proceedings of the seventh IEEE International Conference on},
+  volume={2},
+  pages={1150--1157},
+  year={1999},
+  organization={Ieee}
+}
+
+
+@article{aipr2017,
+author = {Abby Stylianou, and Richard Souvenir, and Robert Pless},
+title = {TraffickCam: Crowdsourced and Computer Vision-based Approaches to Fighting Sex Trafficking},
+journal = {2017 IEEE Applied Imagery Pattern Recognition Workshop (AIPR)},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+year=2017
+}
+
+@article{Lowe:2004:DIF:993451.996342,
+ author = {Lowe, David G.},
+ title = {Distinctive Image Features from Scale-Invariant Keypoints},
+ journal = {Int. J. Comput. Vision},
+ issue_date = {November 2004},
+ volume = {60},
+ number = {2},
+ month = nov,
+ year = {2004},
+ issn = {0920-5691},
+ pages = {91--110},
+ numpages = {20},
+ url = {http://dx.doi.org/10.1023/B:VISI.0000029664.99615.94},
+ doi = {10.1023/B:VISI.0000029664.99615.94},
+ acmid = {996342},
+ publisher = {Kluwer Academic Publishers},
+ address = {Hingham, MA, USA},
+ keywords = {image matching, invariant features, object recognition, scale invariance},
+} 
+
+@inproceedings{Silva:2014:DIO:2612733.2612746,
+ author = {Silva, Daniel Ribeiro and Philpot, Andrew and Sundararajan, Abhishek and Bryan, Nicole Marie and Hovy, Eduard},
+ title = {Data Integration from Open Internet Sources and Network Detection to Combat Underage Sex Trafficking},
+ booktitle = {Proceedings of the 15th Annual International Conference on Digital Government Research},
+ series = {dg.o '14},
+ year = {2014},
+ isbn = {978-1-4503-2901-9},
+ location = {Aguascalientes, Mexico},
+ pages = {86--90},
+ numpages = {5},
+ url = {http://doi.acm.org/10.1145/2612733.2612746},
+ doi = {10.1145/2612733.2612746},
+ acmid = {2612746},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {child trafficking, information integration, law enforcement, natural language processing, prostitution networks, sex trafficking},
+} 
+
+@inproceedings{wang2012data,
+  title={Data integration from open internet sources to combat sex trafficking of minors},
+  author={Wang, Hao and Cai, Congxing and Philpot, Andrew and Latonero, Mark and Hovy, Eduard H and Metzler, Donald},
+  booktitle={Proceedings of the 13th Annual International Conference on Digital Government Research},
+  pages={246--252},
+  year={2012},
+  organization={ACM}
+}
+
+@incollection{fedorschak2014data,
+  title={Data Analytics and Human Trafficking},
+  author={Fedorschak, Kena and Kandala, Srivatsav and Desouza, Kevin C and Krishnamurthy, Rashmi},
+  booktitle={Advancing the Impact of Design Science: Moving from Theory to Practice},
+  pages={69--84},
+  year={2014},
+  publisher={Springer}
+}
+
+@inproceedings{fedina2015systematic,
+  title={A Systematic Review and Methodological Critique of Human Trafficking Prevalence Studies},
+  author={Fedina, Lisa},
+  booktitle={Society for Social Work and Research 19th Annual Conference: The Social and Behavioral Importance of Increased Longevity},
+  year={2015},
+  organization={Sswr}
+}
+
+@inproceedings{blair2014takes,
+  title={It Takes a Movement to Defeat a Market: Tech-Enabled Collaboration to Combat Human Trafficking},
+  author={Blair, Dave},
+  booktitle={APSA 2014 Annual Meeting Paper},
+  year={2014}
+}
+
+% from the memex program
+@inproceedings{knoblock2015scalable,
+  title={A scalable architecture for extracting, aligning, linking, and visualizing multi-Int data},
+  author={Knoblock, Craig A and Szekely, Pedro},
+  booktitle={SPIE Sensing Technology+ Applications},
+  pages={949907--949907},
+  year={2015},
+  organization={International Society for Optics and Photonics}
+}
+@inproceedings{moise2013indexing,
+  title={Indexing and searching 100M images with Map-Reduce},
+  author={Moise, Diana and Shestakov, Denis and Gudmundsson, Gylfi and Amsaleg, Laurent},
+  booktitle={Proceedings of the 3rd ACM conference on International conference on multimedia retrieval},
+  pages={17--24},
+  year={2013},
+  organization={ACM}
+}
+@inproceedings{Zamir10,
+   Author = {Amir Roshan Zamir and Mubarak Shah},
+   Booktitle = {Proceedings of the European Conference on Computer Vision ({ECCV})},
+   Title = {Accurate Image Localization Based on Google Maps Street View},
+   Year = {2010}}
+   
+@misc{vedaldi08vlfeat,
+ Author = {A. Vedaldi and B. Fulkerson},
+ Title = {{VLFeat}: An Open and Portable Library
+          of Computer Vision Algorithms},
+ Year  = {2008},
+ Howpublished = {\url{http://www.vlfeat.org/}
+ }}
+ 
+@InProceedings{allAboutVlad,
+  author       = "Arandjelovi\'c, R. and Zisserman, A.",
+  title        = "All about {VLAD}",
+  booktitle    = CVPR,
+  year         = "2013",
+}
+
+
+@article{vlad,
+ author = {Jegou, Herve and Perronnin, Florent and Douze, Matthijs and Sanchez, Jorge and Perez, Patrick and Schmid, Cordelia},
+ title = {Aggregating Local Image Descriptors into Compact Codes},
+ journal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+ issue_date = {September 2012},
+ volume = {34},
+ number = {9},
+ month = sep,
+ year = {2012},
+ issn = {0162-8828},
+ pages = {1704--1716},
+ numpages = {13},
+ url = {http://dx.doi.org/10.1109/TPAMI.2011.235},
+ doi = {10.1109/TPAMI.2011.235},
+ acmid = {2361217},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {Vectors,Accuracy,Visualization,Kernel,Indexing,Image representation,indexing.,Image search,image retrieval},
+} 
+
+@inproceedings{sun,
+  added-at = {2014-07-31T00:00:00.000+0200},
+  author = {Xiao, Jianxiong and Hays, James and Ehinger, Krista A. and Oliva, Aude and Torralba, Antonio},
+  biburl = {http://www.bibsonomy.org/bibtex/232294b312a372e89fbb447d12d904dc7/dblp},
+  booktitle = {CVPR},
+  crossref = {conf/cvpr/2010},
+  ee = {http://doi.ieeecomputersociety.org/10.1109/CVPR.2010.5539970},
+  interhash = {496f3934a4f2a511117f43d385da847c},
+  intrahash = {32294b312a372e89fbb447d12d904dc7},
+  isbn = {978-1-4244-6984-0},
+  keywords = {dblp},
+  pages = {3485-3492},
+  publisher = {IEEE Computer Society},
+  timestamp = {2015-06-19T16:09:09.000+0200},
+  title = {SUN database: Large-scale scene recognition from abbey to zoo.},
+  url = {http://dblp.uni-trier.de/db/conf/cvpr/cvpr2010.html#XiaoHEOT10},
+  year = 2010
+}
+
+
+@inproceedings{ caltechDataset,
+       author = "P. Doll\'ar and C. Wojek and B. Schiele and  P. Perona",
+       title = "Pedestrian Detection: A Benchmark",
+       booktitle = "CVPR",
+       month = "June",
+       year = "2009",
+       city = "Miami",
+}
+
+@Misc{scipy,
+  author =    {Eric Jones and Travis Oliphant and Pearu Peterson and others},
+  title =     {{SciPy}: Open source scientific tools for {Python}},
+  year =      {2001--},
+  url = "http://www.scipy.org/"
+}
+
+@article{segnet,
+  title={SegNet: A Deep Convolutional Encoder-Decoder Architecture for Robust Semantic Pixel-Wise Labelling},
+  author={Badrinarayanan, Vijay and Handa, Ankur, and Cipolla, Roberto},
+  journal={arXiv preprint arXiv:1505.07293},
+  year={2015}
+}
+
+@techreport{bouche2015report,
+  title={A report on the use of technology to recruit, groom and sell domestic minor sex trafficking victims},
+  author={Bouch{\'e}, Vanessa},
+  year={2015},
+  institution={Thorn}
+}
+
+@techreport{thorn,
+     title = {{Sectortion: Findings from a Survey of 1,631 Victims}},
+     author = {Janis Wolak and David Finkelhor},
+     group = {Crimes Against Children Research Center},
+     year = {2016},
+     institution = {University of New Hampshire},
+     month = {06},
+}
+
+@article{faiss,
+  title={Billion-scale similarity search with GPUs},
+  author={Johnson, Jeff and Douze, Matthijs and J{\'e}gou, Herv{\'e}},
+  journal={arXiv preprint arXiv:1702.08734},
+  year={2017}
+}
+
+@article{Pronobis2010,
+ author = {Pronobis, A. and Caputo, B. and Jensfelt, P. and Christensen, H. I.},
+ title = {A Realistic Benchmark for Visual Indoor Place Recognition},
+ journal = {Robot. Auton. Syst.},
+ issue_date = {January, 2010},
+ volume = {58},
+ number = {1},
+ month = jan,
+ year = {2010},
+ issn = {0921-8890},
+ pages = {81--96},
+ numpages = {16},
+ url = {http://dx.doi.org/10.1016/j.robot.2009.07.025},
+ doi = {10.1016/j.robot.2009.07.025},
+ acmid = {1664026},
+ publisher = {North-Holland Publishing Co.},
+ address = {Amsterdam, The Netherlands, The Netherlands},
+ keywords = {Robot topological localization, Standard robotic benchmark, Visual place recognition},
+} 
+
+@INPROCEEDINGS{5204229, 
+author={K. Chiu and R. Raskar}, 
+booktitle=CVPR,
+title={Computer vision on tap}, 
+year={2009}, 
+volume={}, 
+number={}, 
+pages={31-38}, 
+keywords={Internet;computer vision;motion estimation;Adobe Flash;Internet;Web technologies;computer vision;distributed motion detection algorithm;image stream sharing;real time vision algorithm;Application software;Computer displays;Computer vision;Humans;Internet;Large screen displays;Layout;Motion detection;Pipelines;Tagging}, 
+doi={10.1109/CVPRW.2009.5204229}, 
+ISSN={2160-7508}, 
+month={June}}
+
+@article{DBLP:journals/corr/HuangLW16a,
+  author    = {Gao Huang and
+               Zhuang Liu and
+               Kilian Q. Weinberger},
+  title     = {Densely Connected Convolutional Networks},
+  journal   = {CoRR},
+  volume    = {abs/1608.06993},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1608.06993},
+  archivePrefix = {arXiv},
+  eprint    = {1608.06993},
+  timestamp = {Wed, 07 Jun 2017 14:42:40 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/HuangLW16a},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@INPROCEEDINGS{6113160, 
+author={A. Bendale and K. Chiu and K. Marwah and R. Raskar}, 
+booktitle={2011 IEEE Third International Conference on Privacy, Security, Risk and Trust and 2011 IEEE Third International Conference on Social Computing}, 
+title={VisionBlocks: A Social Computer Vision Framework}, 
+year={2011}, 
+volume={}, 
+number={}, 
+pages={521-526}, 
+keywords={computer vision;face recognition;motion estimation;online front-ends;service-oriented architecture;social networking (online);video signal processing;visual programming;VisionBlocks;change detection;custom products;design capability;face detection;in-browser customizable computer vision application publishing platform;motion tracking;real time video;social computer vision framework;visual programming paradigm;Cameras;Communities;Computer languages;Computer vision;Media;Programming;Visualization;computer vision;social computer vision;visual social computing}, 
+doi={10.1109/PASSAT/SocialCom.2011.157}, 
+ISSN={}, 
+month={Oct},}
+
+@inproceedings{bessinger2016curbappeal,
+  title = {Quantifying Curb Appeal},
+  author = {Bessinger, Zachary and Jacobs, Nathan},
+  booktitle = {IEEE International Conference on Image Processing},
+  annotation = {nvidia},
+  year = {2016},
+  project = {http://cs.uky.edu/%7ezach/publications/bessinger2016quantifying/},
+  pdf = {http://cs.uky.edu/%7ezach/assets/papers/bessinger2016quantifying.pdf}
+}
+
+@article{DBLP:journals/corr/YosinskiCBL14,
+  author    = {Jason Yosinski and
+               Jeff Clune and
+               Yoshua Bengio and
+               Hod Lipson},
+  title     = {How transferable are features in deep neural networks?},
+  journal   = {CoRR},
+  volume    = {abs/1411.1792},
+  year      = {2014},
+  url       = {http://arxiv.org/abs/1411.1792},
+  archivePrefix = {arXiv},
+  eprint    = {1411.1792},
+  timestamp = {Wed, 07 Jun 2017 14:40:45 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/YosinskiCBL14},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@Article{Rajkomar2017,
+author="Rajkomar, Alvin
+and Lingam, Sneha
+and Taylor, Andrew G.
+and Blum, Michael
+and Mongan, John",
+title="High-Throughput Classification of Radiographs Using Deep Convolutional Neural Networks",
+journal="Journal of Digital Imaging",
+year="2017",
+month="Feb",
+day="01",
+volume="30",
+number="1",
+pages="95--101",
+issn="1618-727X",
+doi="10.1007/s10278-016-9914-9",
+url="https://doi.org/10.1007/s10278-016-9914-9"
+}
+
+@Article{Cheng2017,
+author="Cheng, Phillip M.
+and Malhi, Harshawn S.",
+title="Transfer Learning with Convolutional Neural Networks for Classification of Abdominal Ultrasound Images",
+journal="Journal of Digital Imaging",
+year="2017",
+month="Apr",
+day="01",
+volume="30",
+number="2",
+pages="234--243",
+issn="1618-727X",
+doi="10.1007/s10278-016-9929-2",
+url="https://doi.org/10.1007/s10278-016-9929-2"
+}
+
+@Article{Šulc2017,
+author="{\v{S}}ulc, Milan
+and Matas, Ji{\v{r}}{\'i}",
+title="Fine-grained recognition of plants from images",
+journal="Plant Methods",
+year="2017",
+month="Dec",
+day="21",
+volume="13",
+number="1",
+pages="115",
+abstract="Fine-grained recognition of plants from images is a challenging computer vision task, due to the diverse appearance and complex structure of plants, high intra-class variability and small inter-class differences. We review the state-of-the-art and discuss plant recognition tasks, from identification of plants from specific plant organs to general plant recognition ``in the wild''.",
+issn="1746-4811",
+doi="10.1186/s13007-017-0265-4",
+url="https://doi.org/10.1186/s13007-017-0265-4"
+}
+
+@inproceedings{girshick2014rich,
+  title={Rich feature hierarchies for accurate object detection and semantic segmentation},
+  author={Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra},
+  booktitle=CVPR,
+  pages={580--587},
+  year={2014}
+}
+
+@inproceedings{girshick2015fast,
+  title={Fast R-CNN},
+  author={Girshick, Ross},
+  booktitle={Computer Vision (ICCV), 2015 IEEE International Conference on},
+  pages={1440--1448},
+  year={2015},
+  organization={IEEE}
+}
+
+@article{DBLP:journals/corr/RenHG015,
+  author    = {Shaoqing Ren and
+               Kaiming He and
+               Ross B. Girshick and
+               Jian Sun},
+  title     = {Faster {R-CNN:} Towards Real-Time Object Detection with Region Proposal
+               Networks},
+  journal   = {CoRR},
+  volume    = {abs/1506.01497},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1506.01497},
+  archivePrefix = {arXiv},
+  eprint    = {1506.01497},
+  timestamp = {Wed, 07 Jun 2017 14:42:40 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/RenHG015},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{workman2015localize,
+  author = {Workman, Scott and Souvenir, Richard and Jacobs, Nathan},
+  title = {Wide-Area Image Geolocalization with Aerial Reference Imagery},
+  pdf = {http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Workman_Wide-Area_Image_Geolocalization_ICCV_2015_paper.pdf},
+  booktitle = {IEEE International Conference on Computer Vision},
+  year = {2015},
+  thumbnail = {http://cs.uky.edu/%7ejacobs/thumbnails/crossview.jpg},
+  project = {http://cs.uky.edu/%7escott/research/deeplyfound/},
+  code = {https://github.com/scottworkman/deeplyfound},
+  annotation = {spotlight,dataset_cvusa,waldo,nvidia},
+  pages = {1--9}
+}
+
+@article{karayev2013recognizing,
+  title={Recognizing image style},
+  author={Karayev, Sergey and Trentacoste, Matthew and Han, Helen and Agarwala, Aseem and Darrell, Trevor and Hertzmann, Aaron and Winnemoeller, Holger},
+  journal={arXiv preprint arXiv:1311.3715},
+  year={2013}
+}
+
+@article{DBLP:journals/corr/abs-1711-05586,
+  author    = {Mark Marsden and
+               Kevin McGuinness and
+               Suzanne Little and
+               Ciara E. Keogh and
+               Noel E. O'Connor},
+  title     = {People, Penguins and Petri Dishes: Adapting Object Counting Models
+               To New Visual Domains And Object Types Without Forgetting},
+  journal   = {CoRR},
+  volume    = {abs/1711.05586},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1711.05586},
+  archivePrefix = {arXiv},
+  eprint    = {1711.05586},
+  timestamp = {Fri, 01 Dec 2017 14:22:24 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1711-05586},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/corr/BilenV17,
+  author    = {Hakan Bilen and
+               Andrea Vedaldi},
+  title     = {Universal representations: The missing link between faces, text, planktons,
+               and cat breeds},
+  journal   = {CoRR},
+  volume    = {abs/1701.07275},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1701.07275},
+  archivePrefix = {arXiv},
+  eprint    = {1701.07275},
+  timestamp = {Wed, 07 Jun 2017 14:42:12 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/BilenV17},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{kumar2009attribute,
+  title={Attribute and simile classifiers for face verification},
+  author={Kumar, Neeraj and Berg, Alexander C and Belhumeur, Peter N and Nayar, Shree K},
+  booktitle={Computer Vision, 2009 IEEE 12th International Conference on},
+  pages={365--372},
+  year={2009},
+  organization={IEEE}
+}
+
+@article{young2014image,
+  title={From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions},
+  author={Young, Peter and Lai, Alice and Hodosh, Micah and Hockenmaier, Julia},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={2},
+  pages={67--78},
+  year={2014}
+}
+
+@inproceedings{xiao2010sun,
+  title={Sun database: Large-scale scene recognition from abbey to zoo},
+  author={Xiao, Jianxiong and Hays, James and Ehinger, Krista A and Oliva, Aude and Torralba, Antonio},
+  booktitle=CVPR,
+  pages={3485--3492},
+  year={2010},
+  organization={IEEE}
+}
+
+@inproceedings{jacobs2007consistent,
+  title={Consistent temporal variations in many outdoor scenes},
+  author={Jacobs, Nathan and Roman, Nathaniel and Pless, Robert},
+  booktitle=CVPR,
+  pages={1--6},
+  year={2007},
+  organization={IEEE}
+}
+
+@inproceedings{andriluka14cvpr,
+               author = {Mykhaylo Andriluka and Leonid Pishchulin and Peter Gehler and Schiele, Bernt},
+               title = {2D Human Pose Estimation: New Benchmark and State of the Art Analysis},
+               booktitle = CVPR,
+               year = {2014},
+               month = {June}
+}
+
+@inproceedings{imagenet_cvpr09,
+        AUTHOR = {Deng, J. and Dong, W. and Socher, R. and Li, L.-J. and Li, K. and Fei-Fei, L.},
+        TITLE = {{ImageNet: A Large-Scale Hierarchical Image Database}},
+        BOOKTITLE = CVPR,
+        YEAR = {2009},
+        BIBSOURCE = "http://www.image-net.org/papers/imagenet_cvpr09.bib"}
+        
+@inproceedings{mscoco,
+  title={Microsoft coco: Common objects in context},
+  author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
+  booktitle={European conference on computer vision},
+  pages={740--755},
+  year={2014},
+  organization={Springer}
+}
+
+@INPROCEEDINGS{7926644, 
+author={N. R. Nguyen and M. C. Shin}, 
+booktitle=WACV, 
+title={Detecting Social Insects in Videos Using Spatiotemporal Regularization}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={493-500}, 
+keywords={image classification;image motion analysis;learning (artificial intelligence);object detection;video signal processing;STRAL;automated detection method;classifiers;motion analysis;social insect detection;spatiotemporally regularized adaptive learning;Insects;Optical imaging;Spatiotemporal phenomena;Training;Training data;Videos}, 
+doi={10.1109/WACV.2017.61}, 
+ISSN={}, 
+month={March},}
+
+@INPROCEEDINGS{7045944, 
+author={T. Fasciano and A. Dornhaus and M. C. Shin}, 
+booktitle=WACV,
+title={Multiple Insect Tracking with Occlusion Sub-tunnels}, 
+year={2015}, 
+volume={}, 
+number={}, 
+pages={634-641}, 
+keywords={image motion analysis;object tracking;automated tracking methods;motion features;multiple insect tracking;occlusion subtunnels;social insects;Image edge detection;Insects;RFID tags;Robustness;Target tracking;Videos}, 
+doi={10.1109/WACV.2015.90}, 
+ISSN={1550-5790}, 
+month={Jan},}
+
+@INPROCEEDINGS{7045877, 
+author={L. Rice and A. Dornhaus and M. C. Shin}, 
+booktitle=WACV, 
+title={Efficient Training of Multiple Ant Tracking}, 
+year={2015}, 
+volume={}, 
+number={}, 
+pages={117-123}, 
+doi={10.1109/WACV.2015.23}, 
+ISSN={1550-5790}, 
+month={Jan},}
+
+@inproceedings{wu:cvpr2015,
+url = { http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Wu_Robust_Regression_on_2015_CVPR_paper.pdf },
+timestamp = { 2015.03.09 },
+owner = { souvenir },
+pages = { 305--313 },
+month = { June },
+year = { 2015 },
+booktitle = CVPR,
+author = { Hui Wu and Richard Souvenir },
+title = { Robust Regression on Image Manifolds for Ordered Label Denoising },
+}
+
+@inproceedings{Spurlock:2015:DPE:2789116.2789117,
+url = { http://doi.acm.org/10.1145/2789116.2789117 },
+timestamp = { 2015.09.11 },
+owner = { souvenir },
+numpages = { 6 },
+location = { Seville, Spain },
+isbn = { 978-1-4503-3681-9 },
+doi = { 10.1145/2789116.2789117 },
+acmid = { 2789117 },
+publisher = { ACM },
+pages = { 74--79 },
+month = { September },
+year = { 2015 },
+booktitle = { Proceedings of the 9th International Conference on Distributed Smart Cameras (ICDSC) },
+author = { Scott Spurlock and Junjie Shan and Richard Souvenir },
+title = { Discriminative Poses for Early Recognition in Multi-camera Networks },
+}
+
+@inproceedings{brinker:spie15,
+url = { http://spie.org/Publications/Proceedings/Paper/10.1117/12.2082329 },
+timestamp = { 2015.01.27 },
+owner = { souvenir },
+month = { February },
+year = { 2015 },
+booktitle = { SPIE Medical Imaging },
+author = { Andrew Brinker and Annika Fredrikson and Xiaofan Zhang and Richard Souvenir and Shaoting Zhang },
+title = { Toward Consistent Cell Segmentation: Quality Assessment of Cell Segments via Appearance and Geometry Features },
+}
+
+% This file was created with JabRef 2.8.1.
+% Encoding: Cp1252
+
+@INPROCEEDINGS{DBLP:conf/cscw/LipfordWLKC12,
+  author = {Heather Richter Lipford and Pamela J. Wisniewski and Cliff Lampe
+	and Lorraine G. Kisselburgh and Kelly Caine},
+  title = {Reconciling privacy with social media},
+  booktitle = {CSCW (Companion)},
+  year = {2012},
+  pages = {19-20},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  crossref = {DBLP:conf/cscw/2012},
+  ee = {http://doi.acm.org/10.1145/2141512.2141523},
+  owner = {souvenir},
+  timestamp = {2014.08.21}
+}
+
+@INPROCEEDINGS{DBLP:conf/amcis/WisniewskiWL11,
+  author = {Pamela Karr Wisniewski and D. Wilson and Heather Richter Lipford},
+  title = {A New Social Order: Mechanisms for Social Network Site Boundary Regulation},
+  booktitle = {AMCIS},
+  year = {2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  crossref = {DBLP:conf/amcis/2011},
+  ee = {http://aisel.aisnet.org/amcis2011_submissions/101},
+  owner = {souvenir},
+  timestamp = {2014.08.21}
+}
+
+@ARTICLE{blonder2011time,
+  author = {Blonder, Benjamin and Dornhaus, Anna},
+  title = {Time-ordered networks reveal limitations to information flow in ant
+	colonies},
+  journal = {PloS one},
+  year = {2011},
+  volume = {6},
+  pages = {e20298},
+  number = {5},
+  owner = {souvenir},
+  publisher = {Public Library of Science},
+  timestamp = {2014.08.21}
+}
+
+@ARTICLE{dornhaus2008specialization,
+  author = {Dornhaus, Anna},
+  title = {Specialization does not predict individual efficiency in an ant},
+  journal = {PLoS biology},
+  year = {2008},
+  volume = {6},
+  pages = {e285},
+  number = {11},
+  owner = {souvenir},
+  publisher = {Public Library of Science},
+  timestamp = {2014.08.21}
+}
+
+@INPROCEEDINGS{fasciano2014ant,
+  author = {Fasciano, Thomas and Dornhaus, Anna and Shin, Min C},
+  title = {Ant tracking with occlusion tunnels},
+  booktitle = WACV,
+  year = {2014},
+  pages = {947--952},
+  organization = {IEEE},
+  owner = {souvenir},
+  timestamp = {2014.08.21}
+}
+
+@INPROCEEDINGS{mlm:dcc14,
+  author = {Grace, K. and Maher, M. L. and Preece, J. and Yeh, T. and Stangl,
+	A. and \& Boston, C.},
+  title = {A process model for crowd-sourcing design: A case study in citizen
+	science},
+  booktitle = {INTERNATIONAL CONFERENCE ON DESIGN COMPUTING AND COGNITION},
+  year = {2014},
+  editor = {Gero, J.S. and Hanna, S.},
+  owner = {souvenir},
+  timestamp = {2014.08.25}
+}
+
+@INPROCEEDINGS{HC03,
+  author = {E. Heierman and D. J. Cook},
+  title = {{I}mproving {H}ome {A}utomation by {D}iscovering {R}egularly {O}ccurring
+	{D}evice {U}sage {P}atterns},
+  booktitle = {Proceedings of the International Conference on Data Mining},
+  year = {2003},
+  pages = {537--540},
+  owner = {souvenir},
+  timestamp = {2014.08.19}
+}
+
+@INPROCEEDINGS{Latulipe:2011:SOU:2069618.2069738,
+  author = {Latulipe, Celine and Wilson, David and Gonzalez, Berto and Harris,
+	Adam and Carroll, Erin and Huskey, Sybil and Word, Melissa and Beasley,
+	Robert and Nifong, Nathan},
+  title = {SoundPainter},
+  booktitle = {Proceedings of the 8th ACM Conference on Creativity and Cognition},
+  year = {2011},
+  pages = {439--440},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  acmid = {2069738},
+  doi = {10.1145/2069618.2069738},
+  isbn = {978-1-4503-0820-5},
+  keywords = {dance, interactive performing arts, sound rendering},
+  location = {Atlanta, Georgia, USA},
+  numpages = {2},
+  owner = {souvenir},
+  timestamp = {2014.08.21},
+  url = {http://doi.acm.org/10.1145/2069618.2069738}
+}
+
+@INPROCEEDINGS{Maher:2014:NMC:2556420.2556497,
+  author = {Maher, Mary Lou and Preece, Jenny and Yeh, Tom and Boston, Carol
+	and Grace, Kazjon and Pasupuleti, Abhijit and Stangl, Abigale},
+  title = {NatureNet: A Model for Crowdsourcing the Design of Citizen Science
+	Systems},
+  booktitle = {Proceedings of the Companion Publication of the 17th ACM Conference
+	on Computer Supported Cooperative Work \& Social Computing},
+  year = {2014},
+  series = {CSCW Companion '14},
+  pages = {201--204},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  acmid = {2556497},
+  doi = {10.1145/2556420.2556497},
+  isbn = {978-1-4503-2541-7},
+  keywords = {biodiversity in nature parks, citizen science, crowdsourcing design,
+	motivation, tabletop and mobile computing},
+  location = {Baltimore, Maryland, USA},
+  numpages = {4},
+  owner = {souvenir},
+  timestamp = {2014.08.25},
+  url = {http://doi.acm.org/10.1145/2556420.2556497}
+}
+
+@INPROCEEDINGS{nguyen2014data,
+  author = {Nguyen, Hoan and Fasciano, Thomas and Charbonneau, Daniel and Dornhaus,
+	Anna and Shin, Min C},
+  title = {Data association based ant tracking with interactive error correction},
+  booktitle = WACV,
+  year = {2014},
+  pages = {941--946},
+  organization = {IEEE},
+  owner = {souvenir},
+  timestamp = {2014.08.21}
+}
+
+@ARTICLE{PPN09,
+  author = {Pantic, M. and Pentland, A. and Nijholt, A.},
+  title = {Special Issue on Human Computing},
+  journal = {Systems, Man, and Cybernetics, Part B: Cybernetics, IEEE Transactions
+	on},
+  year = {2009},
+  volume = {39},
+  pages = {3 -6},
+  number = {1},
+  month = {feb. },
+  doi = {10.1109/TSMCB.2008.2008372},
+  issn = {1083-4419},
+  owner = {sspurloc},
+  timestamp = {2011.07.20}
+}
+
+@INPROCEEDINGS{parrigan:lowLevel,
+  author = {Kyle Parrigan and Richard Souvenir},
+  title = {Aggregating Low-Level Features for Human Action Recognition},
+  booktitle = {International Symposium on Visual Computing (ISVC)},
+  year = {2010},
+  volume = {1},
+  pages = {143-152},
+  month = {November},
+  owner = {souvenir},
+  timestamp = {2010.09.14}
+}
+
+@ARTICLE{7078994, 
+author={V. M. Patel and R. Gopalan and R. Li and R. Chellappa}, 
+journal={IEEE Signal Processing Magazine}, 
+title={Visual Domain Adaptation: A survey of recent advances}, 
+year={2015}, 
+volume={32}, 
+number={3}, 
+pages={53-69}, 
+doi={10.1109/MSP.2014.2347059}, 
+ISSN={1053-5888}, 
+month={May}}
+
+@inproceedings{kang2014convolutional,
+  title={Convolutional neural networks for no-reference image quality assessment},
+  author={Kang, Le and Ye, Peng and Li, Yi and Doermann, David},
+  booktitle=CVPR,
+  pages={1733--1740},
+  year={2014}
+}
+
+@InProceedings{Parkhi15,
+  author       = "Parkhi, O. M. and Vedaldi, A. and Zisserman, A.",
+  title        = "Deep Face Recognition",
+  booktitle    = "British Machine Vision Conference",
+  year         = "2015",
+}
+
+
+
+@misc{nationalStrategy, 
+  author = "DOJ",
+  title = {National Strategy to Combat Human Trafficking},
+  howpublished = {\url{https://www.justice.gov/humantrafficking/page/file/922791/download}},
+  year = "2017"
+}
+
+@misc{ncmecAmicusBrief,
+  author = "NCMEC",
+  title = {{NCMEC} Amicus Brief},
+  howpublished = {\url{http://www.missingkids.com/content/dam/ncmec/en_us/documents/amicusncmecbackpage.pdf}},
+  year = "2014"
+}
+
+@misc{tcam,
+  title = {Traffickcam},
+  howpublished = {\url{https://traffickcam.com/}}
+}
+
+
+@inproceedings{stylianou2015AIPR,
+url = { http://research.engineering.wustl.edu/~pless/pdfs/AIPRSexTraffickingFinal.pdf },
+timestamp = { 2015.12.02 },
+owner = { souvenir },
+annote = { ugrad, social },
+month = { October },
+year = { 2015 },
+booktitle = { Applied Imagery Pattern Recognition Workshop (AIPR) },
+author = { Abby Stylianou and Abigail Norling-Ruggles and Richard Souvenir and Robert Pless },
+title = { Indexing Open Imagery to Create Tools to Fight Sex Trafficking },
+}
+
+@INPROCEEDINGS{mlm:ecsm14,
+  author = {Preece, J. and Grace, K. and Boston, C. and Maher, M. L. and Yeh,
+	T. and Stangl, A.},
+  title = {Crowdsourcing design and citizen science data using a tabletop in
+	a nature preserve},
+  booktitle = {European Conference on Social Media},
+  year = {2014},
+  owner = {souvenir},
+  timestamp = {2014.08.25}
+}
+
+@INPROCEEDINGS{souvenir08:cvprView,
+  author = {Richard Souvenir and Justin Babbs},
+  title = {Learning the Viewpoint Manifold for Action Recognition},
+  booktitle = CVPR,
+  year = {2008},
+  owner = {souvenir},
+  timestamp = {2014.08.19},
+  url = {pubs/souvenir_vmanifold.pdf}
+}
+
+@INPROCEEDINGS{spurlockWACV14,
+  author = {Scott Spurlock and Richard Souvenir},
+  title = {Multi-View Action Recognition One Camera At a Time},
+  booktitle = {IEEE Winter Conference on Applications of Computer Vision (WACV)},
+  year = {2014},
+  owner = {souvenir},
+  timestamp = {2014.02.03}
+}
+
+@INPROCEEDINGS{Spurlock:ACMSE12,
+  author = {Scott Spurlock and Richard Souvenir},
+  title = {Dynamic Subset Selection for Multi-Camera Tracking},
+  booktitle = {ACM Southeast Conference},
+  year = {2012},
+  pages = {244--249},
+  month = {March},
+  numpages = {6},
+  owner = {sspurloc},
+  timestamp = {2012.04.04},
+  url = {http://webpages.uncc.edu/~sspurloc/papers/spurlock_acmse12.pdf}
+}
+
+@INPROCEEDINGS{Watson:2012:YCS:2335356.2335373,
+  author = {Watson, Jason and Besmer, Andrew and Lipford, Heather Richter},
+  title = {+Your Circles: Sharing Behavior on Google+},
+  booktitle = {Proceedings of the Eighth Symposium on Usable Privacy and Security},
+  year = {2012},
+  series = {SOUPS '12},
+  pages = {12:1--12:9},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  acmid = {2335373},
+  articleno = {12},
+  doi = {10.1145/2335356.2335373},
+  isbn = {978-1-4503-1532-6},
+  keywords = {Facebook, Google+, privacy, social network sites},
+  location = {Washington, D.C.},
+  numpages = {9},
+  owner = {souvenir},
+  timestamp = {2014.08.21},
+  url = {http://doi.acm.org/10.1145/2335356.2335373}
+}
+
+@PROCEEDINGS{DBLP:conf/soups/2012,
+  title = {Symposium On Usable Privacy and Security, SOUPS '12, Washington,
+	DC, USA - July 11 - 13, 2012},
+  year = {2012},
+  editor = {Lorrie Faith Cranor},
+  publisher = {ACM},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  booktitle = {SOUPS},
+  ee = {http://dl.acm.org/citation.cfm?id=2335356},
+  isbn = {978-1-4503-1532-6},
+  owner = {souvenir},
+  timestamp = {2014.08.21}
+}
+
+@PROCEEDINGS{DBLP:conf/cscw/2012,
+  title = {CSCW '12 Computer Supported Cooperative Work, Seattle, WA, USA, February
+	11-15, 2012 - Companion Volume},
+  year = {2012},
+  editor = {Steven E. Poltrock and Carla Simone and Jonathan Grudin and Gloria
+	Mark and John Riedl},
+  publisher = {ACM},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  booktitle = {CSCW (Companion)},
+  isbn = {978-1-4503-1051-2},
+  owner = {souvenir},
+  timestamp = {2014.08.21}
+}
+
+@PROCEEDINGS{DBLP:conf/amcis/2011,
+  title = {A Renaissance of Information Technology for Sustainability and Global
+	Competitiveness. 17th Americas Conference on Information Systems,
+	AMCIS 2011, Detroit, Michigan, USA, August 4-8 2011},
+  year = {2011},
+  editor = {Vallabh Sambamurthy and Mohan Tanniru},
+  publisher = {Association for Information Systems},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  booktitle = {AMCIS},
+  ee = {http://aisel.aisnet.org/amcis2011/},
+  owner = {souvenir},
+  timestamp = {2014.08.21}
+}
+
+@InProceedings{skim:icip2017,
+  author    = {Se Yeon Kim and Scott Spurlock and Richard Souvenir},
+  title     = {HEAD POSE ESTIMATION USING LEARNED DISCRETIZATION},
+  booktitle = {IEEE International Conference on Image Processing (ICIP)},
+  year      = {2017},
+  month     = {September},
+  note      = {accepted for publication},
+}
+
+@article{geofacial,
+doi = { 10.1186/s13640-015-0070-9 },
+month = { June },
+pages = { 1 -- 17 },
+number = { 17 },
+volume = { 2015 },
+year = { 2015 },
+journal = { EURASIP Journal on Image and Video Processing },
+title = { Large-Scale Geo-Facial Image Analysis },
+author = { Islam and Greenwell and Souvenir and Jacobs },
+}
+
+@inproceedings{greenwell:geocrowd,
+timestamp = { 2014.09.30 },
+owner = { souvenir },
+doi = { 10.1145/2676440.2676443 },
+pages = { 32--37 },
+month = { November },
+year = { 2014 },
+booktitle = { ACM SIGSPATAL International Workshop on Crowdsourced and Volunteered Geographic Information (GEOCROWD) },
+author = { Connor Greenwell and Scott Spurlock and Richard Souvenir and Nathan Jacobs },
+title = { {GeoFaceExplorer}: Exploring the Geo-Dependence of Facial Attributes },
+}
+
+@article{mauceri:sketch15,
+timestamp = { 2013.02.14 },
+owner = { souvenir },
+doi = { 10.1016/j.ijhcs.2014.12.009 },
+month = { May },
+pages = { 10 - 22 },
+volume = { 77 },
+year = { 2015 },
+journal = { International Journal of Human-Computer Studies },
+title = { Evaluating Visual Query Methods for Articulated Motion Video Search },
+author = { Cecilia Mauceri and Evan A. Suma and Samantha Finkelstein and Richard Souvenir },
+}
+
+@inproceedings{Spurlock:2015:MHP:2789116.2789123,
+url = { http://doi.acm.org/10.1145/2789116.2789123 },
+timestamp = { 2015.09.11 },
+owner = { souvenir },
+numpages = { 6 },
+location = { Seville, Spain },
+isbn = { 978-1-4503-3681-9 },
+doi = { 10.1145/2789116.2789123 },
+acmid = { 2789123 },
+publisher = { ACM },
+pages = { 122--127 },
+month = { September },
+year = { 2015 },
+booktitle = { Proceedings of the 9th International Conference on Distributed Smart Cameras (ICDSC) },
+author = { Spurlock and Malmgren and Wu and Souvenir },
+title = { Multi-camera Head Pose Estimation Using an Ensemble of Exemplars },
+}
+
+@inproceedings{wu:isbi14align,
+url = { http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6867980 },
+timestamp = { 2013.11.11 },
+owner = { souvenir },
+pages = { 754--757 },
+month = { April },
+year = { 2014 },
+booktitle = { IEEE International Symposium on Biomedical Imaging (ISBI) },
+author = { Hui Wu and Dustin M. Bowers and Toan T. Huynh and Richard Souvenir },
+title = { DEFORMABLE ALIGNMENT USING RANDOM PROJECTIONS OF LANDMARK IMAGES },
+}
+
+@inproceedings{cloudmapWACV14,
+timestamp = { 2014.02.03 },
+owner = { souvenir },
+doi = { 10.1109/WACV.2014.6836000 },
+pages = { 961 - 968 },
+month = { March },
+year = { 2014 },
+booktitle = { Applications of Computer Vision (WACV), 2014 IEEE Winter Conference on },
+author = { Nathan Jacobs and Joshua King and Daniel Bowers and Richard Souvenir },
+title = { Estimating Cloudmaps from Outdoor Image Sequences },
+}
+
+@inproceedings{wu:isbi13viewClassify,
+timestamp = { 2013.01.16 },
+owner = { souvenir },
+doi = { 10.1109/ISBI.2013.6556584 },
+pages = { 748 -- 751 },
+month = { April },
+year = { 2013 },
+booktitle = { International Symposium on Biomedical Imaging (ISBI) },
+author = { Hui Wu and Dustin M. Bowers and Toan T. Huynh and Richard Souvenir },
+title = { ECHOCARDIOGRAM VIEW CLASSIFICATION USING LOW-LEVEL FEATURES },
+}
+
+@inproceedings{wu:isbi13denoise,
+timestamp = { 2013.01.16 },
+owner = { souvenir },
+doi = { 10.1109/ISBI.2013.6556756 },
+pages = { 1232 -- 1235 },
+month = { April },
+year = { 2013 },
+booktitle = { International Symposium on Biomedical Imaging (ISBI) },
+author = { Hui Wu and Dustin M. Bowers and Toan T. Huynh and Richard Souvenir },
+title = { BIOMEDICAL VIDEO DENOISING USING SUPERVISED MANIFOLD LEARNING },
+}
+
+@inproceedings{spurlock:pigvis,
+url = { http://dx.doi.org/10.1007/978-3-642-17274-8_55 },
+timestamp = { 2010.09.14 },
+owner = { souvenir },
+doi = { 10.1007/978-3-642-17274-8_55 },
+publisher = { Springer Science + Business Media },
+month = { November },
+pages = { 564--573 },
+volume = { 2 },
+year = { 2010 },
+booktitle = { International Symposium on Visual Computing (ISVC) },
+title = { Combining Automated and Interactive Visual Analysis of Biomechanical Motion Data },
+author = { Scott Spurlock and Remco Chang and Xiaoyu Wang and Arceneaux IV and Daniel F. Keefe and Richard Souvenir },
+}
+
+
+@inproceedings{jacobs07amos,
+  author={Nathan Jacobs and Nathaniel Roman and Robert Pless},
+  title={Consistent Temporal Variations in Many Outdoor Scenes},
+  year=2007,
+  month = Jun,
+  booktitle=CVPR,
+pages={1-6},
+  URL={http://www.cse.wustl.edu/\~{}jacobsn/papers/cvpr_2007/jacobs2007amos.pdf},
+  project={http://www.cse.wustl.edu/\~{}jacobsn/projects/webcam_dataset/},
+annote={webcams,ugrad,selected}
+}
+
+@inproceedings{jacobs07geolocate,
+  author={Nathan Jacobs and Scott Satkin and Nathaniel Roman and
+  Richard Speyer and Robert Pless},
+  title={Geolocating Static Cameras}, 
+  year=2007,
+  month=Oct,
+  pages={1-6},
+  address={Rio De Janiero, Brazil},
+  booktitle= ICCV,
+  URL={../papers/jacobsICCV07.pdf},
+  annote="webcams,calibration,ugrad,selected"
+}
+
+
+
+@InProceedings{PlessWACVAnomaly2018,
+author = {Di Qi and Joshua Arfin and Mengxue Zhang and Tushar Mathew and Brendan Juba and Robert Pless},
+title = "Anomaly Explanation Using Metadata",
+booktitle = WACV,
+year = {2018}
+}
+
+
+@inproceedings{osullivan2014AIPR,
+  title={Democratizing the Visualization of 500 million webcam images},
+  author={Joseph O'Sullivan and Abby Stylianou and Robert Pless}, 
+  booktitle={Applied Imagery Pattern Recognition Workshop (AIPR)},
+  year={2014},
+  annote={webcams,ugrad,ML,social},
+  url={../papers/AIPR_democratizingFinal.pdf},
+}
+
+
+@article{jacobs2013two,
+  title={Two Cloud-Based Cues for Estimating Scene Structure and Camera Calibration},
+  author={Jacobs, Nathan and Abrams, Austin and Pless, Robert},
+  journal=PAMI,
+  pages={1},
+  year={2013},
+  annotation={webcams, selected,geometry},
+  publisher={IEEE},
+  url={../papers/twoCloudsPAMI.pdf},
+}
+
+@article{Abrams:2013:WGI:2422956.2422964,
+ author = {Abrams, Austin and Pless, Robert},
+ title = {Web-accessible geographic integration and calibration of webcams},
+ journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+ issue_date = {February 2013},
+ volume = {9},
+ number = {1},
+ month = feb,
+ year = {2013},
+ pages = {8:1--8:20},
+ url = {../papers/tomccap2012.pdf},
+ doi = {10.1145/2422956.2422964},
+ acmid = {2422964},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ annotation={webcams,ML,social},
+ keywords = {Camera calibration, geospatial Web services, pan-tilt-zoom cameras, participatory GIS, social computing, voluntary geographic information, webcams}
+} 
+
+
+@inproceedings{jacobs09webcamgis,
+  author={Nathan Jacobs and Walker Burgin and Nick Fridrich and Austin
+    Abrams and Kylia Miskell and Bobby H. Braswell and Andrew D.
+      Richardson and Robert Pless},
+  title={The Global Network of Outdoor Webcams: Properties and
+    Applications},
+  year=2009,
+  pages={111-120},
+  month=nov,
+  booktitle={ACM International Conference on Advances in Geographic
+    Information Systems (SIGSPATIAL GIS)},
+  URL="../papers/jacobsPless09.pdf",
+  annote="webcam,GIS,selected,ugrad,ML,social"
+}
+
+
+@InProceedings{abrams2013episolar,
+  author =       {Austin Abrams and Kylia Miskell and Robert Pless},
+  title =        {The Episolar Constraint: Monocular Shape from Shadow Correspondence},
+  annote={webcams,selected},
+  booktitle = CVPR,
+  year =      2013,
+  annotation={timelapse,clouds,webcams,geometry},
+  url = {../papers/cvpr2013episolar.pdf}
+}
+
+@article{yolov3,
+  title={YOLOv3: An Incremental Improvement},
+  author={Redmon, Joseph and Farhadi, Ali},
+  journal = {arXiv},
+  year={2018}
+}
+
+@article{DBLP:journals/corr/LiuAESR15,
+  author    = {Wei Liu and
+               Dragomir Anguelov and
+               Dumitru Erhan and
+               Christian Szegedy and
+               Scott E. Reed and
+               Cheng{-}Yang Fu and
+               Alexander C. Berg},
+  title     = {{SSD:} Single Shot MultiBox Detector},
+  journal   = {CoRR},
+  volume    = {abs/1512.02325},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.02325},
+  archivePrefix = {arXiv},
+  eprint    = {1512.02325},
+  timestamp = {Wed, 07 Jun 2017 14:42:54 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/LiuAESR15},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{DBLP:journals/tosn/RestucciaDP16,
+  author    = {Francesco Restuccia and
+               Sajal K. Das and
+               Jamie Payton},
+  title     = {Incentive Mechanisms for Participatory Sensing: Survey and Research
+               Challenges},
+  journal   = {IEEE Transactions On Sensor Networks},
+  volume    = {12},
+  number    = {2},
+  pages     = {13:1--13:40},
+  year      = {2016},
+  url       = {http://doi.acm.org/10.1145/2888398},
+  doi       = {10.1145/2888398},
+  timestamp = {Tue, 03 Jan 2017 16:08:26 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/tosn/RestucciaDP16},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@STRING{CVPR = {CVPR}}
+@STRING{CVPR = {IEEE Conference on Computer Vision and Pattern Recognition}}
+
+@STRING{ICRA = {ICRA}}
+@STRING{ICRA = {International Conference on Robotics and Automation}}
+
+@STRING{ECCV = {ECCV}}
+@STRING{ECCV = {European Conference on Computer Vision}}
+
+@STRING{ICCV = {ICCV}}
+@STRING{ICCV = {IEEE International Conference on Computer Vision}}
+
+@STRING{ICDSC = {ICDSC}} 
+@STRING{ICDSC = {International Conference on Distributed Smart Cameras}} 
+
+@STRING{BMVC = {BMVC}}
+@STRING{BMVC = {British Machine Vision Conference}}
+
+@STRING{ICPR = {ICPR}}
+@STRING{ICPR= {International Conference on Pattern Recognition}}
+
+@STRING{SIGGRAPH = {SIGGRAPH}} 
+@STRING{SIGGRAPH = {ACM Transactions on Graphics (SIGGRAPH)}}
+
+@STRING{NIPS = {NIPS}}
+@STRING{NIPS = {Advances in Neural Information Processing Systems}}
+
+@STRING{ICML = {ICML}}
+@STRING{ICML = {International Conference on Machine Learning}}
+
+@STRING{ICLR = {ICLR}}
+@STRING{ICLR = {International Conference on Learning Representations}}
+
+@STRING{IROS = {IROS}}
+@STRING{IROS = {IEEE/RSJ International Conference on Intelligent Robots and Systems}}
+
+@STRING{WACV_C = {WACV}}
+@STRING{WACV_C = {IEEE Winter Conference on Applications of Computer Vision}}
+
+@STRING{WACV_W = {WACV}}
+@STRING{WACV_W = {IEEE Workshop on Applications of Computer Vision}}
+
+@STRING{T-PAMI = {PAMI}}
+@STRING{T-PAMI = {IEEE Transactions on Pattern Analysis and Machine Intelligence}}
+
+@STRING{IJCV = {IJCV}}
+@STRING{IJCV = {International Journal of Computer Vision}}
+
+@STRING{CVIU = {CVIU}} 
+@STRING{CVIU = {Computer Vision and Image Understanding}} 
+
+@STRING{WWW = {WWW}}
+@STRING{WWW = {International World Wide Web Conference}} 
+
+@STRING{TOG = {TOG}}
+@STRING{TOG = {ACM Transactions on Graphics}}
+
+@STRING{ACMMM = {ACMMM}}
+@STRING{ACMMM = {ACM International Conference on Multimedia}}
+
+@STRING{THREEDV = {3DV}}
+@STRING{THREEDV = {International Conference on 3D Vision}}
+
+@inproceedings{lin2013cross,
+  title={Cross-View Image Geolocalization},
+  author={Lin, Tsung-Yi and Belongie, Serge and Hays, James},
+  booktitle=CVPR,
+  year={2013}
+}
+
+@inproceedings{hadsell2006dimensionality,
+  title={Dimensionality reduction by learning an invariant mapping},
+  author={Hadsell, Raia and Chopra, Sumit and LeCun, Yann},
+  booktitle=CVPR,
+  year={2006}
+}
+
+@inproceedings{pinheiro2014recurrent,
+  title={Recurrent convolutional neural networks for scene
+    labeling},
+  author={Pinheiro, Pedro and Collobert, Ronan},
+  booktitle=ICML,
+  year={2014}
+}
+
+@article{jia2014caffe,
+  title={Caffe: Convolutional Architecture for Fast Feature
+    Embedding},
+  author={Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and
+    Karayev, Sergey and Long, Jonathan and Girshick, Ross and
+      Guadarrama, Sergio and Darrell, Trevor},
+  journal={arXiv preprint arXiv:1408.5093},
+  year={2014}
+}
+
+@inproceedings{workman2014rainbow,
+  title={A Pot of Gold: Rainbows as a Calibration Cue},
+  author={Scott Workman and R. Paul Mihail and Nathan Jacobs},
+  year=2014,
+  booktitle=ECCV,
+}
+
+@inproceedings{zhou2014places,
+  title={Learning Deep Features for Scene Recognition using Places
+    Database.},
+  author={Zhou, B. and Lapedriza, A. and Xiao, J. and Torralba, A.
+    and Oliva, A.},
+  booktitle=NIPS,
+  year={2014}
+}
+
+@inproceedings{taigman2014deepface,
+  title={Deepface: Closing the gap to human-level performance in
+    face verification},
+  author={Taigman, Yaniv and Yang, Ming and Ranzato, Marc'Aurelio
+    and Wolf, Lior},
+  booktitle=CVPR,
+  year={2014}
+}
+
+@inproceedings{girshick2014rich,
+  title={Rich feature hierarchies for accurate object detection and
+    semantic segmentation},
+  author={Girshick, Ross and Donahue, Jeff and Darrell, Trevor and
+    Malik, Jitendra},
+  booktitle=CVPR,
+  year={2014}
+}
+
+@inproceedings{dong2014learning,
+  title={Learning a deep convolutional network for image
+    super-resolution},
+  author={Dong, Chao and Loy, Chen Change and He, Kaiming and
+    Tang, Xiaoou},
+  booktitle=ECCV,
+  year={2014}
+}
+
+@inproceedings{jaderberg2014deep,
+  title={Deep features for text spotting},
+  author={Jaderberg, Max and Vedaldi, Andrea and Zisserman,
+    Andrew},
+  booktitle=ECCV,
+  year={2014}
+}
+
+@inproceedings{islam2014exploring,
+  title={Exploring the geo-dependence of human face appearance},
+  author={Islam, Mohammad T and Workman, Scott and Wu, Hui and
+    Jacobs, Nathan and Souvenir, Richard},
+  booktitle=WACV_C,
+  year={2014}
+}
+
+@inproceedings{patterson2012sun,
+  title={Sun attribute database: Discovering, annotating, and
+    recognizing scene attributes},
+  author={Patterson, Genevieve and Hays, James},
+  booktitle=CVPR,
+  year={2012}
+}
+
+@inproceedings{quercia2014aesthetic,
+  title={Aesthetic capital: what makes london look beautiful, quiet,
+    and happy?},
+  author={Quercia, Daniele and O'Hare, Neil Keith and Cramer,
+    Henriette},
+  booktitle={ACM Conference on Computer Supported Cooperative Work and
+    Social Computing},
+  year={2014}
+}
+
+@article{doersch2012what,
+  title={What Makes Paris Look like Paris?},
+  author={Carl Doersch and Saurabh Singh and Abhinav Gupta and
+    Josef Sivic and Alexei A. Efros},
+  journal=SIGGRAPH,
+  volume={31},
+  number={4},
+  year={2012}
+}
+
+@article{fang2014discovering,
+  title={Discovering Geo-Informative Attributes for Location
+    Recognition and Exploration},
+  author={Fang, Quan and Sang, Jitao and Xu, Changsheng},
+  journal={ACM Transactions on Multimedia Computing,
+    Communications, and Applications},
+  volume={11},
+  number={1s},
+  pages={19},
+  year={2014},
+}
+
+@article{laffont14,
+  title={Transient Attributes for High-Level Understanding and
+    Editing of Outdoor Scenes},
+  author={Pierre-Yves Laffont and Zhile Ren and Xiaofeng Tao
+    and Chao Qian and James Hays},
+  journal=SIGGRAPH,
+  volume={33},
+  number={4},
+  year={2014}
+}
+
+@inproceedings{jacobs11geolocate,
+  title={Webcam Geo-localization using Aggregate Light Levels},
+  author={Nathan Jacobs and Kylia Miskell and Robert Pless},
+  booktitle=WACV_W,
+  year=2011
+}
+
+@inproceedings{jacobs08geoorient,
+  title={Toward Fully Automatic Geo-Location and Geo-Orientation of
+    Static Outdoor Cameras},
+  author={Nathan Jacobs and Nathaniel Roman and Robert Pless},
+  booktitle=WACV_W,
+  year=2008
+}
+
+@article{snavely2006photo,
+  title={Photo tourism: exploring photo collections in 3D},
+  author={Snavely, Noah and Seitz, Steven M and Szeliski,
+    Richard},
+  journal=TOG,
+  volume={25},
+  number={3},
+  pages={835--846},
+  year={2006}
+}
+
+@inproceedings{hays2008im2gps,
+  title={IM2GPS: estimating geographic information from a single
+    image},
+  author={Hays, James and Efros, Alexei A},
+  booktitle=CVPR,
+  year={2008}
+}
+
+@inproceedings{baatz2012large,
+  title={Large scale visual geo-localization of images in
+    mountainous terrain},
+  author={Baatz, Georges and Saurer, Olivier and K{\"o}ser, Kevin
+    and Pollefeys, Marc},
+  booktitle=ECCV,
+  year={2012}
+}
+
+@inproceedings{zhou2014recognizing,
+  title={Recognizing City Identity via Attribute Analysis of
+    Geo-tagged Images},
+  author={Zhou, Bolei and Liu, Liu and Oliva, Aude and Torralba,
+    Antonio},
+  booktitle=ECCV,
+  year={2014}
+}
+
+@inproceedings{torralba2003context,
+  title={Context-based vision system for place and object
+    recognition},
+  author={Torralba, Antonio and Murphy, Kevin P and Freeman, William T
+    and Rubin, Mark A},
+  booktitle=CVPR,
+  year={2003},
+}
+
+@inproceedings{schindler2007city,
+  title={City-scale location recognition},
+  author={Schindler, Grant and Brown, Matthew and Szeliski,
+    Richard},
+  booktitle=CVPR,
+  year={2007}
+}
+
+@inproceedings{chen2011city,
+  title={City-scale landmark identification on mobile devices},
+  author={Chen, David M and Baatz, Georges and Koser, K and Tsai,
+    Sam S and Vedantham, Ramakrishna and Pylvanainen, Timo and
+      Roimela, Kimmo and Chen, Xin and Bach, Jeff and Pollefeys,
+    Marc and others},
+  booktitle=CVPR,
+  year={2011}
+}
+
+@inproceedings{crandall2009mapping,
+  title={Mapping the world's photos},
+  author={Crandall, David J and Backstrom, Lars and Huttenlocher,
+    Daniel and Kleinberg, Jon},
+  booktitle=WWW,
+  year={2009}
+}
+
+@incollection{li2012worldwide,
+  title={Worldwide pose estimation using 3d point clouds},
+  author={Li, Yunpeng and Snavely, Noah and Huttenlocher, Dan and
+    Fua, Pascal},
+  booktitle=ECCV,
+  year={2012}
+}
+
+@inproceedings{karpathy2014large,
+  title={Large-scale video classification with convolutional neural
+    networks},
+  author={Karpathy, Andrej and Toderici, George and Shetty,
+    Sanketh and Leung, Thomas and Sukthankar, Rahul and Fei-Fei,
+    Li},
+  booktitle=CVPR,
+  year={2014}
+}
+
+@inproceedings{yosinski2014transferable,
+  title={How transferable are features in deep neural networks?},
+  author={Yosinski, Jason and Clune, Jeff and Bengio, Yoshua and
+    Lipson, Hod},
+  booktitle=NIPS,
+  year={2014}
+}
+
+@inproceedings{razavian2014cnn,
+  title={CNN Features off-the-shelf: an Astounding Baseline for
+    Recognition},
+  author={Razavian, Ali Sharif and Azizpour, Hossein and Sullivan,
+    Josephine and Carlsson, Stefan},
+  booktitle={IEEE CVPR Workshop: DeepVision: Deep learning in Computer Vision},
+  year={2014}
+}
+
+@inproceedings{workman2015geocnn,
+  title={On the Location Dependence of Convolutional Neural Network
+    Features},
+  author={Scott Workman and Nathan Jacobs},
+  booktitle={IEEE/ISPRS Workshop: Looking From Above: When Earth
+    Observation Meets Vision},
+  year=2015,
+}
+
+@inproceedings{shan2014accurate,
+  title={Accurate Geo-Registration by Ground-to-Aerial Image Matching},
+  author={Shan, Qi and Wu, Changchang and Curless, Brian and Furukawa,
+    Yasutaka and Hernandez, Carlos and Seitz, Steven M},
+  booktitle=THREEDV,
+  year={2014},
+}
+
+@inproceedings{li2009landmark,
+  title={Landmark classification in large-scale image collections},
+  author={Li, Y. and Crandall, D.J. and Huttenlocher, D.P.},
+  booktitle=CVPR,
+  year={2009}
+}
+
+@inproceedings{knopp2010avoiding,
+  title={Avoiding confusing features in place recognition},
+  author={Knopp, Jan and Sivic, Josef and Pajdla, Tomas},
+  booktitle=ECCV,
+  year={2010},
+}
+
+@inproceedings{torii2013visual,
+  title={Visual place recognition with repetitive structures},
+  author={Torii, Akihiko and Sivic, Josef and Pajdla, Tomas and
+    Okutomi, Masatoshi},
+  booktitle=CVPR,
+  year={2013},
+}
+
+@inproceedings{zamir2010accurate,
+  title={Accurate image localization based on google maps street view},
+  author={Zamir, Amir Roshan and Shah, Mubarak},
+  booktitle=ECCV,
+  year={2010},
+}
+
+@inproceedings{cozman1995robot,
+  title={Robot localization using a computer vision sextant},
+  author={Cozman, Fabio and Krotkov, Eric},
+  booktitle=ICRA,
+  year={1995}
+}
+
+@article{lalonde2010sun,
+  title={What do the sun and the sky tell us about the camera?},
+  author={Lalonde, Jean-Fran{\c{c}}ois and Narasimhan, Srinivasa G
+    and Efros, Alexei A},
+  journal=IJCV,
+  year={2010},
+}
+
+@inproceedings{wu2010geo,
+  title={Geo-location estimation from two shadow trajectories},
+  author={Wu, Lin and Cao, Xiaochun},
+  booktitle=CVPR,
+  year={2010},
+}
+
+@article{junejo2010gps,
+  title={{GPS} coordinates estimation and camera calibration from
+    solar shadows},
+  author={Junejo, Imran N and Foroosh, Hassan},
+  journal=CVIU,
+  year={2010},
+}
+
+@article{sandnes2011determining,
+  title={Determining the geographical location of image scenes based
+    on object shadow lengths},
+  author={Sandnes, Frode Eika},
+  journal={Journal of Signal Processing Systems},
+  year={2011},
+}
+
+@inproceedings{sunkavalli2008color,
+  title={What do color changes reveal about an outdoor scene?},
+  author={Sunkavalli, K. and Romeiro, F. and Matusik, W. and Zickler,
+    T. and Pfister, H.},
+  booktitle=CVPR,
+  year={2008}
+}
+
+@inproceedings{viswanathan2014vision,
+  title={Vision based robot localization by ground to satellite
+    matching in GPS-denied situations},
+  author={Viswanathan, Anirudh and Pires, Bernardo R and Huber,
+    Daniel},
+  booktitle=IROS,
+  year={2014}
+}
+
+@inproceedings{lee2014predicting,
+  title={Predicting Geo-informative Attributes in Large-scale Image
+    Collections using Convolutional Neural Networks},
+  author={Lee, Stefan and Zhang, Haipeng and Crandall, David J},
+  booktitle=WACV_C,
+  year={2014}
+}
+
+@article{daume2006domain,
+  title={Domain adaptation for statistical classifiers},
+  author={Daume III, Hal and Marcu, Daniel},
+  journal={Journal of Artificial Intelligence Research},
+  pages={101--126},
+  year={2006}
+}
+
+@inproceedings{szegedy2015going,
+  title={Going deeper with convolutions},
+  author={Szegedy, Christian and Liu, Wei and Jia, Yangqing and
+    Sermanet, Pierre and Reed, Scott and Anguelov, Dragomir and
+      Erhan, Dumitru and Vanhoucke, Vincent and Rabinovich,
+    Andrew},
+  booktitle=CVPR,
+  year={2015}
+}
+
+@inproceedings{lin2014network,
+  title={Network In Network},
+  author={Min Lin and Qiang Chen and Shuicheng Yan},
+  booktitle=ICLR,
+  year={2014},
+}
+
+@inproceedings{chatfield2014return,
+  title={Return of the devil in the details: Delving deep into
+    convolutional nets},
+  author={Chatfield, Ken and Simonyan, Karen and Vedaldi, Andrea and
+    Zisserman, Andrew},
+  booktitle=BMVC,
+  year={2014}
+}
+
+@article{russakovsky2015imagenet,
+  title={ImageNet Large Scale Visual Recognition Challenge},
+  author={Olga Russakovsky and Jia Deng and Hao Su and Jonathan
+    Krause and Sanjeev Satheesh and Sean Ma and Zhiheng Huang and
+      Andrej Karpathy and Aditya Khosla and Michael Bernstein and
+      Alexander C. Berg and Li Fei-Fei},
+  journal=IJCV,
+  year={2015}
+}
+
+@inproceedings{karayev2014recognizing,
+  title={Recognizing image style},
+  author={Karayev, Sergey and Trentacoste, Matthew and Han, Helen and
+    Agarwala, Aseem and Darrell, Trevor and Hertzmann, Aaron and
+      Winnemoeller, Holger},
+  booktitle=BMVC,
+  year={2014}
+}
+
+@inproceedings{nilsback2008automated,
+  title={Automated flower classification over a large number of
+    classes},
+  author={Nilsback, M-E and Zisserman, Andrew},
+  booktitle={Indian Conference on Computer Vision, Graphics and Image Processing},
+  year={2008},
+}
+
+@inproceedings{lin2015learning,
+  title={Learning Deep Representations for Ground-to-Aerial Geolocalization},
+  author={Lin, Tsung-Yi and Cui, Yin and Belongie, Serge and Hays, James},
+  booktitle=CVPR,
+  year={2015}
+}
+
+@inproceedings{luo2008event,
+  title={Event recognition: viewing the world with a third eye},
+  author={Luo, Jiebo and Yu, Jie and Joshi, Dhiraj and Hao, Wei},
+  booktitle=ACMMM,
+  year={2008},
+}
+
+@inproceedings{bansal2011geo,
+  title={Geo-localization of street views with aerial image databases},
+  author={Bansal, Mayank and Sawhney, Harpreet S and Cheng, Hui and
+    Daniilidis, Kostas},
+  booktitle=ACMMM,
+  year={2011},
+}
+
+@inproceedings{netdissect2017,
+  title={Network Dissection: Quantifying Interpretability of Deep Visual Representations},
+  author={Bau, David and Zhou, Bolei and Khosla, Aditya and Oliva, Aude and Torralba, Antonio},
+  booktitle={Computer Vision and Pattern Recognition},
+  year={2017}
+}
+
+@inproceedings{RTC16,
+ title = {{CNN} Image Retrieval Learns from {BoW}: Unsupervised Fine-Tuning with Hard Examples},
+ author = {Radenovi{\'c}, F. and Tolias, G. and Chum, O.},
+ booktitle = ECCV,
+ year = {2016}
+}
+
+@inproceedings{tolias2016rmac,
+  title={Particular object retrieval with integral max-pooling of CNN activations},
+  author={Tolias, Giorgos and Sicre, Ronan and J{\'e}gou, Herv{\'e}},
+  booktitle={International Conference on Learning Representations},
+  year={2016}
+}
+
+@article{deepInside,
+  author    = {Karen Simonyan and
+               Andrea Vedaldi and
+               Andrew Zisserman},
+  title     = {Deep Inside Convolutional Networks: Visualising Image Classification
+               Models and Saliency Maps},
+  journal   = {CoRR},
+  volume    = {abs/1312.6034},
+  year      = {2013},
+  url       = {http://arxiv.org/abs/1312.6034},
+  archivePrefix = {arXiv},
+  eprint    = {1312.6034},
+  timestamp = {Wed, 07 Jun 2017 14:42:21 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/SimonyanVZ13},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@TECHREPORT{visualization_techreport,
+       author = {Erhan, Dumitru and Bengio, Yoshua and Courville, Aaron and Vincent, Pascal},
+        month = jun,
+        title = {Visualizing Higher-Layer Features of a Deep Network},
+       number = {1341},
+         year = {2009},
+  institution = {University of Montreal},
+         note = {Also presented at the ICML 2009 Workshop on Learning Feature Hierarchies, Montr{\'{e}}al, Canada.}
+}
+
+@article{ZeilerF13,
+  author    = {Matthew D. Zeiler and
+               Rob Fergus},
+  title     = {Visualizing and Understanding Convolutional Networks},
+  journal   = {CoRR},
+  volume    = {abs/1311.2901},
+  year      = {2013},
+  url       = {http://arxiv.org/abs/1311.2901},
+  archivePrefix = {arXiv},
+  eprint    = {1311.2901},
+  timestamp = {Wed, 07 Jun 2017 14:40:45 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/ZeilerF13},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@InProceedings{Ahmed_2015_CVPR,
+author = {Ahmed, Ejaz and Jones, Michael and Marks, Tim K.},
+title = {An Improved Deep Learning Architecture for Person Re-Identification},
+booktitle = CVPR,
+month = {June},
+year = {2015}
+}
+
+@article{walchover2017new,
+  title={New theory cracks open the black box of deep learning},
+  author={Walchover, N},
+  journal={Quanta Magazine},
+  volume={3},
+  year={2017}
+}
+
+@inproceedings{FongV17,
+  author    = {Ruth C. Fong and
+               Andrea Vedaldi},
+  title     = {Interpretable Explanations of Black Boxes by Meaningful Perturbation},
+  booktitle = {{IEEE} International Conference on Computer Vision, {ICCV} 2017, Venice,
+               Italy, October 22-29, 2017},
+  pages     = {3449--3457},
+  year      = {2017},
+  crossref  = {DBLP:conf/iccv/2017},
+  url       = {https://doi.org/10.1109/ICCV.2017.371},
+  doi       = {10.1109/ICCV.2017.371},
+  timestamp = {Thu, 11 Jan 2018 13:21:37 +0100},
+  biburl    = {https://dblp.org/rec/bib/conf/iccv/FongV17},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Zintgraf2017,
+  title={Visualizing Deep Neural Network Decisions: Prediction Difference Analysis},
+  author={Luisa M Zintgraf and Taco S Cohen and Tameem Adel and Max Welling},
+  booktitle=ICLR,
+  year={2017},
+}
+
+@inproceedings{visualPlaceRecognition,
+  author    = {Zetao Chen and
+               Adam Jacobson and
+               Niko S{\"{u}}nderhauf and
+               Ben Upcroft and
+               Lingqiao Liu and
+               Chunhua Shen and
+               Ian D. Reid and
+               Michael Milford},
+    title={Deep learning features at scale for visual place recognition},
+booktitle=ICRA,
+  pages={3223--3230},
+  year={2017},
+  organization={IEEE}
+}
+
+@InProceedings{Lin_2015_CVPR,
+author = {Lin, Tsung-Yi and Cui, Yin and Belongie, Serge and Hays, James},
+title = {Learning Deep Representations for Ground-to-Aerial Geolocalization},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2015}
+}
+
+@inproceedings{vo2017revisit,
+  title={Revisiting IM2GPS in the deep learning era},
+  author={Vo, Nam and Jacobs, Nathan and Hays, James},
+  booktitle={Computer Vision (ICCV), 2017 IEEE International Conference on},
+  pages={2640--2649},
+  year={2017},
+  organization={IEEE}
+}
+
+@inproceedings{zhai2018geotemporal,
+  title = {Learning Geo-Temporal Image Features},
+  author = {Zhai, Menghua and Salem, Tawfiq and Greenwell, Connor and Workman, Scott and Pless, Robert and Jacobs, Nathan},
+  thumbnail = {http://cs.uky.edu/%7ejacobs/thumbnails/when_where.jpg},
+  pdf = {http://cs.uky.edu/%7eted/assets/pdfs/whenwhere.pdf},
+  annotation = {career,amos,webcam,spotlight},
+  booktitle = {British Machine Vision Conference (BMVC)},
+  year = {2018}
+}
+
+@book{grauman_leibe_2011, 
+    place={S.l.}, 
+    title={Visual object recognition}, 
+    publisher={Morgan and Claypool}, 
+    author={Grauman, Kristen Lorraine. and Leibe, Bastian}, 
+    year={2011}}
+
+@inproceedings{tensorflow,
+title	= {TensorFlow: A system for large-scale machine learning},
+author	= {Martin Abadi and Paul Barham and Jianmin Chen and Zhifeng Chen and Andy Davis and Jeffrey Dean and Matthieu Devin and Sanjay Ghemawat and Geoffrey Irving and Michael Isard and Manjunath Kudlur and Josh Levenberg and Rajat Monga and Sherry Moore and Derek G. Murray and Benoit Steiner and Paul Tucker and Vijay Vasudevan and Pete Warden and Martin Wicke and Yuan Yu and Xiaoqiang Zheng},
+year	= {2016},
+URL	= {https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf},
+booktitle	= {12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)},
+pages	= {265--283}
+}
+%author	= {Martin Abadi and others},
+
