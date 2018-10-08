@@ -1,18 +1,6 @@
 % !TEX root = thesis.tex
 
-\chapter{Understanding Hotel Recognition in the Context of Scene and Place Recognition}
+\chapter{Learning to Recognize Hotels}
 \label{ch:2}
 
-Identifying the scene from which an image was captured is a problem of great interest in the computer vision community. Work in this area involves both classification tasks, where the goal is to identify the specific scene category (e.g., park, beach, church), as well as recognition tasks, where the goal is to identify the precise location where an image was captured. These tasks can be grouped based on the specificity of the categories~\cite{grauman_leibe_2011}:
-
-\begin{enumerate}
-    \item Basic-level categories (e.g., `building')
-    \item Specialized categories (e.g., `church')
-    \item Exact instances (e.g., `the Notre-Dame')
-\end{enumerate}
-
-The first task (``What is in this picture?'') is the basic level classification task. The second task (``What type of building is in this picture?'') can be referred to as \emph{\textbf{scene} recognition} and the third task (``What specific church is in this picture?'') as \emph{\textbf{place} recognition}.
-
-Scene recognition requires learning the shared properties of the examples in the specialized class, while place recognition requires learning the specific components and their configuration that correspond to a particular instance.
-
-Hotel recognition, however, does not fit neatly into either the scene recognition or the place recognition task. It requires learning both the general, shared properties of all of the rooms in a particular hotel, such as its decor or star rating or commonly used color profiles, as well as recognizing exact duplicated instances of furniture, art and bedding that may be used in different configurations throughout the hotel.
+% this chapter should present how we're going to solve the hotel recognition problem and give the roadmap for the remaining parts of the document that focus on traffickcam. (1) train a deep learning network using publicly available travel images; (2) why we need the traffickcam app
