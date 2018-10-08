@@ -4,17 +4,15 @@
 \label{ch:4}
 
 % hotels-50K
-
-
-The Hotels-50K dataset is a carefully curated subset of the data collected both using teh TraffickCam application and publicly available data. The Hotels-50K dataset includes over 1 million images from 50,000 hotels around the world, and is designed to support efforts by the broader computer vision community to address the challenging hotel recognition task.
+The Hotels-50K dataset is a carefully curated subset of the data collected both using the TraffickCam application and publicly available data. The Hotels-50K dataset includes over 1 million images from 50,000 hotels around the world, and is designed to support efforts by the broader computer vision community to address the challenging hotel recognition task.
 
 In our presentation of the Hotels-50K dataset, we first propose and formulate the problem of hotel instance recognition.  Second, we curate and share a data set and evaluation protocol for this problem at a scale that is relevant to international efforts to address trafficking.  Third, we describe and test algorithms that include the data augmentation steps necessary to attack this problem as a reasonable baseline for comparisons.
 
 \begin{figure}
     \centering
-    \includegraphics[height=1.8in]{figures/example_images/queries/1.png}
-    \includegraphics[height=1.8in]{figures/example_images/queries/2.png}
-    \includegraphics[height=1.8in]{figures/example_images/queries/3.png}
+    \includegraphics[height=1.8in]{figures/chapter4/example_images/queries/1.png}
+    \includegraphics[height=1.8in]{figures/chapter4/example_images/queries/2.png}
+    \includegraphics[height=1.8in]{figures/chapter4/example_images/queries/3.png}
     \caption{Example images from hotel rooms used in human trafficking investigations with the region containing the victim masked off.}
     \label{fig:queries}
 \end{figure}
@@ -33,7 +31,7 @@ These benchmarks drive competitions for comparing classification and retrieval m
 %moved this figure far forward to fix problems later.
 \begin{figure}
     \centering
-    \includegraphics[width=.95\columnwidth]{figures/geographic_hist/geographic_density2.png}
+    \includegraphics[width=.95\columnwidth]{figures/chapter4/geographic_hist/geographic_density2.png}
     \caption{Geographic distribution of the Hotels-50K dataset, with a dot at every hotel location, color coded (from blue to yellow) by the local density of hotels. Images are most abundant in the United States, Western Europe and along popular coastlines. }
     \label{fig:geographicDensity}
 \end{figure}
@@ -50,152 +48,152 @@ This place recognition problem can also be formulated as an image retrieval task
 
         \multicolumn{3}{c|}{(a) Travel Websites} & \multicolumn{3}{c}{(b) TraffickCam} \\
 
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/6/1.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/6/1.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/6/2.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/6/2.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/6/3.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/6/3.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/6/2.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/6/2.jpg}}
         & 
-        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/example_images/tcam/6/1.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/chapter4/example_images/tcam/6/1.jpg}}
         & 
-        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/example_images/tcam/6/3.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/chapter4/example_images/tcam/6/3.jpg}}
         
         \\
         \hline
         
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/10/1.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/10/1.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/10/2.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/10/2.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/10/3.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/10/3.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/10/2.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/10/2.jpg}}
         & 
-        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/example_images/tcam/10/1.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/chapter4/example_images/tcam/10/1.jpg}}
         & 
-        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/example_images/tcam/10/3.jpg}} 
+        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/chapter4/example_images/tcam/10/3.jpg}} 
         
         % \\
         % \hline
 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/1/1.png}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/1/1.png}}
         % & 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/1/3.png}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/1/3.png}}
         % & 
-        % \raisebox{-.5\height}{\includegraphics[width=.65in]{figures/example_images/expedia/1/2.png}} 
+        % \raisebox{-.5\height}{\includegraphics[width=.65in]{figures/chapter4/example_images/expedia/1/2.png}} 
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/1/1.png}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/1/1.png}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/1/2.png}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/1/2.png}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/example_images/tcam/1/3.png}} 
+        % \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/chapter4/example_images/tcam/1/3.png}} 
         
         \\
         \hline
         
-        \raisebox{-.5\height}{\includegraphics[width=.96in]{figures/example_images/expedia/4/1.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=.96in]{figures/chapter4/example_images/expedia/4/1.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=.95in]{figures/example_images/expedia/4/2.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=.95in]{figures/chapter4/example_images/expedia/4/2.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/4/3.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/4/3.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/4/2.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/4/2.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/4/3.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/4/3.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/example_images/tcam/4/1.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/chapter4/example_images/tcam/4/1.jpg}}
         
         \\
         \hline
 
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/5/1.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/5/1.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/5/2.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/5/2.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/5/3.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/5/3.jpg}}
         & 
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/5/1.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/5/1.jpg}}
         &
-        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/5/2.jpg}}
+        \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/5/2.jpg}}
         & 
-        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/example_images/tcam/5/3.jpg}} 
+        \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/chapter4/example_images/tcam/5/3.jpg}} 
         
         % \\
         % \hline
 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/7/1.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/7/1.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/7/2.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/7/2.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/7/3.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/7/3.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/7/2.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/7/2.jpg}}
         % & 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/7/3.jpg}} 
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/7/3.jpg}} 
         % & 
-        % \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/example_images/tcam/7/1.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=.6in]{figures/chapter4/example_images/tcam/7/1.jpg}}
         
         % \\
         % \hline
         
-        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/2/1.jpg}} & 
-        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/2/2.jpg}}
+        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/2/1.jpg}} & 
+        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/2/2.jpg}}
         %  &
-        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/2/3.jpg}} &
-        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/2/1.jpg}}
+        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/2/3.jpg}} &
+        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/2/1.jpg}}
         %  &
-        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/2/2.jpg}}
+        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/2/2.jpg}}
         %  &
-        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/2/3.jpg}}
+        %  \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/2/3.jpg}}
          
         % \\
         % \hline
 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/3/1.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/3/1.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/3/2.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/3/2.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/3/3.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/3/3.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/3/1.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/3/1.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/3/2.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/3/2.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/3/3.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/3/3.jpg}}
         
         % \\
         % \hline
         
 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/8/1.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/8/1.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/8/2.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/8/2.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/8/3.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/8/3.jpg}}
         % & 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/8/1.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/8/1.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/8/2.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/8/2.jpg}}
         % & 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/8/3.jpg}} 
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/8/3.jpg}} 
         
         % \\
         % \hline
         
 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/9/1.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/9/1.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/9/2.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/9/2.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/expedia/9/3.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/expedia/9/3.jpg}}
         % & 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/9/1.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/9/1.jpg}}
         % &
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/9/2.jpg}}
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/9/2.jpg}}
         % & 
-        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/example_images/tcam/9/3.jpg}} 
+        % \raisebox{-.5\height}{\includegraphics[width=\exampleImWidth]{figures/chapter4/example_images/tcam/9/3.jpg}} 
     \end{tabular}
     \caption[Image variability from different sources]{Comparing images across data sources shows clear differences in image quality and lighting.  Each row shows images from the same hotel, with examples from (a) travel websites and (b) the TraffickCam crowd-sourcing app.}
     \label{fig:domainImages}
@@ -222,7 +220,7 @@ On the other hand, while there are fewer crowdsourced images, these share more v
 \paragraph{Hotels-50K Dataset Statistics} Of the 50,000 hotel classes in the Hotels-50K training dataset, 13,900 have TraffickCam user-submitted images (a total of 55,061 TraffickCam images are included in the training set). There are no hotels in the dataset that have only TraffickCam images.
 
 \begin{figure*}
-    \centering    \includegraphics[width=2\columnwidth]{figures/imagesChainsAndHotels.jpg}
+    \centering    \includegraphics[width=2\columnwidth]{figures/chapter4/imagesChainsAndHotels.jpg}
     \caption{(a) Number of images, by source, for each of the 92 chains represented in the Hotels-50K dataset. (b) Histogram of the number of images per hotel in the Hotels-50K dataset, by the source.}
     \label{fig:imsPerClass}
 \end{figure*}
@@ -233,13 +231,13 @@ Figure~\ref{fig:imsPerClass} show two histograms that characterize the sampling 
 \begin{figure}[t]
     \centering
     \begin{tabular}{lccc}
-    \raisebox{-.5\height}{\rotatebox{90}{Motel 6}}&\raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/motel6_1.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/motel6_2.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/motel6_3.jpg}}
+    \raisebox{-.5\height}{\rotatebox{90}{Motel 6}}&\raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/motel6_1.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/motel6_2.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/motel6_3.jpg}}
     \\
     \\
-    \raisebox{-.5\height}{\rotatebox{90}{Super 8}}&\raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/super8_1.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/super8_2.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/super8_3.jpg}}
+    \raisebox{-.5\height}{\rotatebox{90}{Super 8}}&\raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/super8_1.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/super8_2.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/super8_3.jpg}}
     \\
     \\
-    \raisebox{-.5\height}{\rotatebox{90}{Extended Stay}}&\raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/extendedstay_1.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/extendedstay_2.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/sameHotel_vs_sameChain/extendedstay_3.jpg}}
+    \raisebox{-.5\height}{\rotatebox{90}{Extended Stay}}&\raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/extendedstay_1.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/extendedstay_2.jpg}} & \raisebox{-.5\height}{\includegraphics[height=\chnConfusionHeight]{figures/chapter4/sameHotel_vs_sameChain/extendedstay_3.jpg}}
     \\
     \end{tabular}
     \caption{In each row, the first two images are from the same hotel, and the third is from a different hotel of the same chain.  This highlights one of the main challenges with hotel recognition, that images within the same hotel may be visually dissimilar, while images from different hotels, especially those from the same chain, may be visually similar.  }

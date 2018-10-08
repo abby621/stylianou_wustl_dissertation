@@ -1,0 +1,18 @@
+% !TEX root = thesis.tex
+
+\chapter{Conclusion}
+\label{ch:8}
+
+\section{Social Impact of This Work}
+Images of human trafficking victims are often shared by traffickers among criminal networks and posted in online advertisements. These images contain clues as to the location the image was captured. The datasets and search tools we have developed will be better able to link victims in images to particular places. This can serve to create links between different people seen in the same rooms, or many different hotel locations seen in different images. For instance, proving that a victim was moved across state lines may lead to additional or upgraded charges. This image search platform for law enforcement will support investigations to rescue and support trafficking victims, avoid their re-victimization, and to prosecute their traffickers to the fullest extent of the law. 
+
+Since the initial deployment and popular press about TraffickCam~\cite{cnn,techcrunch,washingtonpost}, we have maintained a list of hundreds of law enforcement agencies that have requested information about and access to these search tools. This list not only highlights the need for such tools, but provides a path for the dissemination of the updated image search system to groups that are actively interested in using TraffickCam to investigate and prosecute human trafficking.
+
+While the scope of this proposal has focused on human trafficking, it is the case that other illicit activities also occur in hotel rooms, for example, drug or weapons trafficking. The tools and algorithms developed in the course of this project could be applied to a broader set of cases.
+
+\section{Visualization Conclusions}
+We present an approach to visualize the image regions responsible for pairwise similarity in an embedding network.  While some previous work visualizes a few of these components, we find that the top few components do not explain most of the similarity.  Our approach explicitly decomposes the entire similarity score between two images and assigns it to the relevant image regions.
+
+We illustrate a number of possible ways to use this visualization tool, exploring differences in networks trained with max pooling and average pooling, illustrating how the focus of a network changes during training, and offering an approach that uses this spatial similarity decomposition to search for matches to objects or sub-regions in an image.
+
+The research area of similarity networks is quite active, exploring variations in the pooling strategies, learned or explicitly pre-defined linear transforms of the pooled feature, and boosting and ensemble strategies.  We will share our code with the goal that the visualizations will provide additional insight about how embeddings are affected by these algorithmic choices.
