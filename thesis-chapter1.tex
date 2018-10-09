@@ -38,3 +38,15 @@ Such images are often captured in hotel rooms. Identifying the hotels in these p
 Figure~\ref{fig:victimQuery_to_hotel} shows an example image from investigators, where a victim is posed in a hotel room. The hotel recognition task is to identify what hotel the victim was photographed in. The properties of the victim photographs further complicate the hotel recognition task -- the images are often of low quality, from uncommon camera perspectives, with large occlusions (often the victim).
 
 Developing hotel recognition algorithms that are robust to these difficult query conditions is not only an interesting computer vision challenge, but also has very real human impacts.
+
+% this chapter should present how we're going to solve the hotel recognition problem and give the roadmap for the remaining parts of the document that focus on traffickcam. (1) train a deep learning network using publicly available travel images; (2) why we need the traffickcam app
+
+\section{Deep Learning for Recognition Problems}
+\todo{Add section w/ background and related work on scene recognition and image similarity; discuss treating this as an image similarity problem; introduce why we need TraffickCam as segue into Chapter 2}
+The place recognition problem be formulated as an image retrieval task where images of known locations serve as a database, and a query image's location is inferred by finding visually similar images in the dataset~\cite{baatz2012large,chen2011city,crandall2009mapping,hays2008im2gps,jacobs07geolocate,schindler2007city,torii2013visual,zamir2010accurate,googleLandmarks}.
+
+\todo{Discuss previous approaches w/ local features, since that's what our preliminary experiments in the AIPR paper does.}
+
+Increasingly, however, state of the art approaches to place recognition involve training deep neural networks to produce similar features for images from nearby locations~\cite{zhou2014recognizing,netvlad,visualPlaceRecognition,vo2017revisit,zhai2018geotemporal}.
+
+\todo{Explain that while we can use these off-the-shelf networks, and some even have classes like 'hotel room' or 'bedroom', we know that we want to train networks with tons of hotel room images and that in order to do domain transfer well to real world query images, we'll need images from more than just travel websites.}
